@@ -5,6 +5,7 @@ import React from 'react'
 import { Route } from '@citymapper/api/generated/models/Route'
 import Map from './Map'
 import MapRoutes from './mapRoutes'
+import StartEnd from './StartEnd'
 
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
@@ -70,6 +71,7 @@ const TransitDirections: NextPage = () => {
         <Typography variant="h3" component="h3" gutterBottom>
           RouteList
         </Typography>
+        <StartEnd start={start} end={end} setStart={setStart} setEnd={setEnd} />
         <Button onClick={onSubmit} variant={'contained'}>
           Get Sample Results
         </Button>

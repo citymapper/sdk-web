@@ -50,11 +50,13 @@ const TransitDirections: NextPage = () => {
       key={0}
       position={{ lat: start[0], lng: start[1] }}
       draggable={true}
+      onDrag={setStart}
     />,
     <EndMarker
       key={1}
       position={{ lat: end[0], lng: end[1] }}
       draggable={true}
+      onDrag={setEnd}
     />,
   ]
 

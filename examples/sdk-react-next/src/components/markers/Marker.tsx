@@ -35,6 +35,18 @@ const Marker: React.FC<google.maps.MarkerOptions> = (options) => {
   React.useEffect(() => {
     if (marker) {
       marker.setOptions(options)
+
+      const actions = ['dragend']
+      actions.forEach((eventName) =>
+        google.maps.event.clearListeners(marker, eventName)
+      )
+
+      if (options.onDrag) {
+        marker.addListener('dragend', () => {
+          const latLng = marker.getPosition()
+          options.onDrag([latLng.lat(), latLng.lng()])
+        })
+      }
     }
   }, [marker, options])
 

@@ -31,10 +31,7 @@ const Home: NextPage = () => {
 
 export default function Index() {
   return (
-    <Container maxWidth={false}>
-      <Box sx={{ my: 4 }}>
-        <h3 className={styles.title}></h3>
-      </Box>
+    <Container maxWidth={false} disableGutters>
       <TransitDirections />
       <footer className={styles.footer}>
         <a

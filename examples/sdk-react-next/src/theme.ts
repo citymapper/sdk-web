@@ -20,22 +20,28 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
-import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles'
+import { red } from '@mui/material/colors'
 
 // Create a theme instance.
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#556cd6',
+      main: '#ebecf0',
+      contrastText: '#000',
     },
     secondary: {
-      main: '#19857b',
+      main: '#f5f5f7',
+      contrastText: '#000',
+    },
+    brand: {
+      main: '#37AB2F',
+      contrastText: '#000',
     },
     error: {
       main: red.A400,
     },
   },
-});
+})
 
-export default theme;
+export default theme

@@ -62,28 +62,45 @@ const TransitDirections: NextPage = () => {
   ]
 
   return (
-    <Grid container spacing={2}>
-      <Grid item style={{ maxWidth: isDesktop ? '440px' : '100vw' }}>
+    <Grid container spacing={0} sx={{ height: '100vh' }}>
+      <Grid
+        item
+        sx={{
+          width: isDesktop ? '320px' : '100vw',
+          maxHeight: '100vh',
+          overflowY: 'scroll',
+          boxShadow: '0 1px 5px rgba(0,0,0,0.65)',
+          p: 2,
+          zIndex: 1,
+        }}
+      >
         <Typography variant="p" component="p" gutterBottom>
           <a href="https://citymapper.com">Citymapper</a> for React
         </Typography>
 
-        <Typography variant="h3" component="h3" gutterBottom>
+        <Typography variant="h4" component="h4" gutterBottom>
           RouteList
         </Typography>
         <StartEnd start={start} end={end} setStart={setStart} setEnd={setEnd} />
-        <Button onClick={onSubmit} variant={'contained'}>
-          Get Sample Results
+        <Button
+          onClick={onSubmit}
+          variant={'contained'}
+          color="primary"
+          sx={{ width: 1, mt: 1, mb: 4, boxShadow: 'none' }}
+        >
+          Search
         </Button>
-        <ThemedRouteList
-          routes={routes}
-          onClick={onRouteClick}
-          onMouseEnter={(e, route) => setHoveredRoute(route)}
-          selectedRoute={selectedRoute || hoveredRoute}
-        />
+        {routes?.length > 0 && (
+          <ThemedRouteList
+            routes={routes}
+            onClick={onRouteClick}
+            onMouseEnter={(e, route) => setHoveredRoute(route)}
+            selectedRoute={selectedRoute || hoveredRoute}
+          />
+        )}
       </Grid>
-      <Grid item sx={{ height: '90vh', flexGrow: 1 }}>
-        <Map onClick={onMapClick}>
+      <Grid item sx={{ flexGrow: 1 }}>
+        <Map onClick={onMapClick} start={start} end={end}>
           {markers}
           <MapRoutes
             routes={routes}

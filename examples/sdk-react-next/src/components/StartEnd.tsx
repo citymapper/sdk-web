@@ -1,12 +1,13 @@
 import * as React from 'react'
 import TextField from '@mui/material/TextField'
-import Grid from '@mui/material/Grid'
+import Stack from '@mui/material/Stack'
+import ChangeCircleRoundedIcon from '@mui/icons-material/ChangeCircleRounded'
 import { stringToLatLng } from '../utils/latLng'
 
 const format = (latLng: Array<number>) => {
   const lat = `${latLng[0]}`.length > 6 ? latLng[0].toFixed(6) : latLng[0]
   const lng = `${latLng[1]}`.length > 6 ? latLng[1].toFixed(6) : latLng[1]
-  return `${lat},${lng}`
+  return `${lat}, ${lng}`
 }
 
 const StartEnd: React.FunctionComponent<{
@@ -22,23 +23,43 @@ const StartEnd: React.FunctionComponent<{
 
   React.useEffect(() => setEndValue(format(end)), [end])
 
+  const onIconClick = () => {
+    const _startValue = startValue
+    const _endValue = endValue
+    setStartValue(_endValue)
+    setEndValue(_startValue)
+  }
+
   return (
-    <Grid container direction="column">
+    <Stack sx={{ width: 1, position: 'relative' }}>
       <TextField
         size="small"
         label="Start"
-        variant="filled"
+        variant="outlined"
         value={startValue}
         onChange={(e) => setStartValue(e.target.value)}
+        sx={{ mb: 1 }}
       />
       <TextField
         size="small"
         label="End"
-        variant="filled"
+        variant="outlined"
         value={endValue}
         onChange={(e) => setEndValue(e.target.value)}
       />
-    </Grid>
+      <ChangeCircleRoundedIcon
+        onClick={onIconClick}
+        fontSize="large"
+        color="brand"
+        sx={{
+          position: 'absolute ',
+          zIndex: 1,
+          top: '26px',
+          right: '16px',
+          cursor: 'pointer',
+        }}
+      />
+    </Stack>
   )
 }
 

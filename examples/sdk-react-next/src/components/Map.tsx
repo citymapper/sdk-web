@@ -22,18 +22,14 @@ const render = (status: Status) => {
   return <h1>{status}</h1>
 }
 
-const mapStyles = [
-  {
-    featureType: 'poi',
-    stylers: [
-      {
-        visibility: 'off',
-      },
-    ],
-  },
-]
+interface MapWrapper extends google.maps.MapOptions {
+  onClick?: (e: google.maps.MapMouseEvent) => void
+  start?: Array<number>
+  end?: Array<number>
+  children?: React.ReactNode
+}
 
-const MapWrapper: React.VFC = ({ onClick, children }) => {
+const MapWrapper: React.VFC = ({ onClick, start, end, children }) => {
   const [zoom, setZoom] = React.useState(13) // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 51.483406,
@@ -59,6 +55,8 @@ const MapWrapper: React.VFC = ({ onClick, children }) => {
           style={{ flexGrow: '1', height: '100%' }}
           styles={mapStyles}
           gestureHandling="greedy"
+          start={start}
+          end={end}
         >
           {children}
         </Map>
@@ -66,10 +64,13 @@ const MapWrapper: React.VFC = ({ onClick, children }) => {
     </div>
   )
 }
+
 interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string }
   onClick?: (e: google.maps.MapMouseEvent) => void
   onIdle?: (map: google.maps.Map) => void
+  start?: Array<number>
+  end?: Array<number>
   children?: React.ReactNode
 }
 
@@ -78,6 +79,8 @@ const Map: React.FC<MapProps> = ({
   onIdle,
   children,
   style,
+  start,
+  end,
   ...options
 }) => {
   const ref = React.useRef<HTMLDivElement>(null)
@@ -113,6 +116,19 @@ const Map: React.FC<MapProps> = ({
       }
     }
   }, [map, onClick, onIdle])
+
+  React.useEffect(() => {
+    if (map) {
+      const bounds = new google.maps.LatLngBounds()
+      if (start) {
+        bounds.extend(new google.maps.LatLng({ lat: start[0], lng: start[1] }))
+      }
+      if (start) {
+        bounds.extend(new google.maps.LatLng({ lat: end[0], lng: end[1] }))
+      }
+      map.fitBounds(bounds)
+    }
+  }, [map, start, end])
 
   return (
     <>

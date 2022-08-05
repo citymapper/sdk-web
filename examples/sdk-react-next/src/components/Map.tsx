@@ -18,6 +18,8 @@ import * as React from 'react'
 import { Wrapper, Status } from '@googlemaps/react-wrapper'
 import { createCustomEqual } from 'fast-equals'
 import { isLatLngLiteral } from '@googlemaps/typescript-guards'
+import mapStyles from '../../styles/mapStyles'
+
 const render = (status: Status) => {
   return <h1>{status}</h1>
 }

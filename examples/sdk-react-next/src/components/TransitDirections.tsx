@@ -7,6 +7,7 @@ import Map from './Map'
 import MapRoutes from './mapRoutes'
 import StartEnd from './StartEnd'
 
+import CircularProgress from '@mui/material/CircularProgress'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import Button from '@mui/material/Button'
@@ -27,11 +28,14 @@ const TransitDirections: NextPage = () => {
   const [markerIndex, setMarkerIndex] = React.useState(0)
   const [hoveredRoute, setHoveredRoute] = React.useState(null as Route | null)
   const [selectedRoute, setSelectedRoute] = React.useState(null as Route | null)
+  const [loading, setLoading] = React.useState(false)
 
   const onSubmit = async () => {
+    setLoading(true)
     const res = await myApi.directions_transit(start, end)
     const { routes: myRoutes } = res
     setRoutes(myRoutes)
+    setLoading(false)
   }
   const onMapClick = (e: google.maps.MapMouseEvent) => {
     // avoid directly mutating state
@@ -85,10 +89,23 @@ const TransitDirections: NextPage = () => {
         <Button
           onClick={onSubmit}
           variant={'contained'}
-          color="primary"
-          sx={{ width: 1, mt: 1, mb: 4, boxShadow: 'none' }}
+          color="brand"
+          sx={{
+            width: 1,
+            mt: 1,
+            mb: 4,
+            boxShadow: 'none',
+            textTransform: 'none',
+          }}
         >
-          Search
+          {loading ? (
+            <>
+              <CircularProgress color="inherit" size="24.5px" sx={{ mr: 1 }} />
+              Thinking...
+            </>
+          ) : (
+            'Search'
+          )}
         </Button>
         {routes?.length > 0 && (
           <ThemedRouteList

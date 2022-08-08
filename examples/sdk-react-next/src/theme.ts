@@ -36,7 +36,7 @@ const theme = createTheme({
     },
     brand: {
       main: '#37AB2F',
-      contrastText: '#000',
+      contrastText: '#fff',
     },
     error: {
       main: red.A400,

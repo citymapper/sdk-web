@@ -117,7 +117,7 @@ const TransitDirections: NextPage = () => {
         )}
       </Grid>
       <Grid item sx={{ flexGrow: 1 }}>
-        <Map onClick={onMapClick} start={start} end={end}>
+        <Map onClick={onMapClick} loading={loading} start={start} end={end}>
           {markers}
           <MapRoutes
             routes={routes}

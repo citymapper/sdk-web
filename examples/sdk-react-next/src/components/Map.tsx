@@ -26,12 +26,13 @@ const render = (status: Status) => {
 
 interface MapWrapper extends google.maps.MapOptions {
   onClick?: (e: google.maps.MapMouseEvent) => void
+  loading: boolean
   start?: Array<number>
   end?: Array<number>
   children?: React.ReactNode
 }
 
-const MapWrapper: React.VFC = ({ onClick, start, end, children }) => {
+const MapWrapper: React.VFC = ({ onClick, start, end, loading, children }) => {
   const [zoom, setZoom] = React.useState(13) // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 51.483406,
@@ -59,6 +60,7 @@ const MapWrapper: React.VFC = ({ onClick, start, end, children }) => {
           gestureHandling="greedy"
           start={start}
           end={end}
+          loading={loading}
         >
           {children}
         </Map>
@@ -71,6 +73,7 @@ interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string }
   onClick?: (e: google.maps.MapMouseEvent) => void
   onIdle?: (map: google.maps.Map) => void
+  loading: boolean
   start?: Array<number>
   end?: Array<number>
   children?: React.ReactNode
@@ -81,6 +84,7 @@ const Map: React.FC<MapProps> = ({
   onIdle,
   children,
   style,
+  loading,
   start,
   end,
   ...options
@@ -120,7 +124,7 @@ const Map: React.FC<MapProps> = ({
   }, [map, onClick, onIdle])
 
   React.useEffect(() => {
-    if (map) {
+    if (map && loading) {
       const bounds = new google.maps.LatLngBounds()
       if (start) {
         bounds.extend(new google.maps.LatLng({ lat: start[0], lng: start[1] }))
@@ -130,7 +134,7 @@ const Map: React.FC<MapProps> = ({
       }
       map.fitBounds(bounds)
     }
-  }, [map, start, end])
+  }, [map, loading])
 
   return (
     <>

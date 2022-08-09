@@ -92,7 +92,6 @@ const TransitDirections: NextPage = () => {
           color="brand"
           sx={{
             width: 1,
-            mt: 1,
             mb: 4,
             boxShadow: 'none',
             textTransform: 'none',

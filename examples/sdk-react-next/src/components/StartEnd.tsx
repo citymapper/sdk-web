@@ -1,8 +1,8 @@
 import * as React from 'react'
-import TextField from '@mui/material/TextField'
 import Stack from '@mui/material/Stack'
 import ChangeCircleRoundedIcon from '@mui/icons-material/ChangeCircleRounded'
 import { stringToLatLng } from '../utils/latLng'
+import Input from './Input'
 
 const format = (latLng: Array<number>) => {
   const lat = `${latLng[0]}`.length > 6 ? latLng[0].toFixed(6) : latLng[0]
@@ -32,18 +32,13 @@ const StartEnd: React.FunctionComponent<{
 
   return (
     <Stack sx={{ width: 1, position: 'relative' }}>
-      <TextField
-        size="small"
+      <Input
         label="Start"
-        variant="outlined"
         value={startValue}
         onChange={(e) => setStartValue(e.target.value)}
-        sx={{ mb: 1 }}
       />
-      <TextField
-        size="small"
+      <Input
         label="End"
-        variant="outlined"
         value={endValue}
         onChange={(e) => setEndValue(e.target.value)}
       />

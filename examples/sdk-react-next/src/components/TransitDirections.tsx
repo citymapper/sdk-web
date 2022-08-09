@@ -7,10 +7,9 @@ import Map from './Map'
 import MapRoutes from './mapRoutes'
 import StartEnd from './StartEnd'
 
-import CircularProgress from '@mui/material/CircularProgress'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
-import Button from '@mui/material/Button'
+import Button from './Button'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import StartMarker from './markers/StartMarker'
 import EndMarker from './markers/EndMarker'
@@ -86,26 +85,7 @@ const TransitDirections: NextPage = () => {
           RouteList
         </Typography>
         <StartEnd start={start} end={end} setStart={setStart} setEnd={setEnd} />
-        <Button
-          onClick={onSubmit}
-          variant={'contained'}
-          color="brand"
-          sx={{
-            width: 1,
-            mb: 4,
-            boxShadow: 'none',
-            textTransform: 'none',
-          }}
-        >
-          {loading ? (
-            <>
-              <CircularProgress color="inherit" size="24.5px" sx={{ mr: 1 }} />
-              Thinking...
-            </>
-          ) : (
-            'Search'
-          )}
-        </Button>
+        <Button onClick={onSubmit} label="Search" loading={loading} />
         {routes?.length > 0 && (
           <ThemedRouteList
             routes={routes}

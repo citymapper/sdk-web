@@ -70,11 +70,11 @@ const TransitDirections: NextPage = () => {
       <Grid
         item
         sx={{
-          width: isDesktop ? '320px' : '100vw',
+          width: isDesktop ? '440px' : '100vw',
           maxHeight: '100vh',
           overflowY: 'scroll',
           boxShadow: '0 1px 5px rgba(0,0,0,0.65)',
-          p: 2,
+          p: 5,
           zIndex: 1,
         }}
       >

@@ -1,0 +1,10 @@
+node_modules
+dist
+yarn-error.log
+generated
+out-ts
+lerna-debug.log
+.DS_Store
+.cache
+storybook-static
+.vercel

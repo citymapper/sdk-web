@@ -1,0 +1,44 @@
+{
+  "name": "sdk-react-next",
+  "version": "0.0.1-alpha.0",
+  "private": true,
+  "license": "MIT",
+  "author": {
+    "name": "Citymapper",
+    "email": "developer@citymapper.com"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf node_modules && rm -rf .next"
+  },
+  "dependencies": {
+    "@citymapper/api": "latest",
+    "@citymapper/sdk-react": "latest",
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@fontsource/roboto": "^4.5.7",
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@googlemaps/typescript-guards": "^2.0.1",
+    "@mapbox/polyline": "^1.1.1",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.0",
+    "fast-equals": "^4.0.1",
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.42",
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "^4.7.3"
+  }
+}

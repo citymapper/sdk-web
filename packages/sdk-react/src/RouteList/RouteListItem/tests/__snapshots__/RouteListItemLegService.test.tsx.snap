@@ -1,0 +1,2214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteListItemLegService multiple branded service should display disruption correctly when in box 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-2.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 svg,
+.emotion-4 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-4.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-status cm-route-summary-service-status--small cm-route-summary-service-status--box cm-route-summary-service-status--travel_affected emotion-2"
+      >
+        <svg
+          class="emotion-3"
+          fill="none"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <circle
+            cx="8"
+            cy="8"
+            fill="#FE9001"
+            r="7.5"
+            stroke="white"
+          />
+          <path
+            d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+            fill="white"
+          />
+          <path
+            d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-mode emotion-4"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/7cc6a7780f45d7deacef753dc95309cab47b478ea0a8a9181c0b032c/d324a6fb/@2x.png"
+          title="Central"
+        />
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-4"
+        data-service-brand="DLR"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/8768de61b035211677738e1c0dd3be8cab705c36063b1406de29cd7a/d324a6fb/@2x.png"
+          title="DLR"
+        />
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple branded service should display in a box even when serviceStyle is badge 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 15;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        Central
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="DLR"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        DLR
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple branded service should display in a box when serviceBranding is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 15;
+  height: 16;
+}
+
+.emotion-5 {
+  margin: 0 4px;
+  color: #c3c7ce;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        Central
+      </div>
+    </span>
+    <div
+      class="cm-route-summary-service-separator emotion-5"
+    >
+      /
+    </div>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="DLR"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        DLR
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple branded service should display in a box without separators by default 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/7cc6a7780f45d7deacef753dc95309cab47b478ea0a8a9181c0b032c/d324a6fb/@2x.png"
+          title="Central"
+        />
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="DLR"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/8768de61b035211677738e1c0dd3be8cab705c36063b1406de29cd7a/d324a6fb/@2x.png"
+          title="DLR"
+        />
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple non-branded service should display as badge with 1 icon 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 .cm-route-summary-service-name,
+.emotion-1 .cm-route-summary-service-marker {
+  background-color: #C2322E;
+  color: #fff;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.emotion-1 .cm-route-summary-service-marker {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  width: 3px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded cm-route-summary-service--badge emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d017fb8cdd82a312484df53e7bf3e1b4b39c1940a4ce077a6c617d2e/d324a6fb/@2x.png"
+        />
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        40
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        63
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple non-branded service should display as badge with 1 icon and correct disruption 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 .cm-route-summary-service-name,
+.emotion-1 .cm-route-summary-service-marker {
+  background-color: #C2322E;
+  color: #fff;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.emotion-1 .cm-route-summary-service-marker {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  width: 3px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-5 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-5 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-5.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-5.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-6 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded cm-route-summary-service--badge emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d017fb8cdd82a312484df53e7bf3e1b4b39c1940a4ce077a6c617d2e/d324a6fb/@2x.png"
+        />
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        40
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-status cm-route-summary-service-status--small cm-route-summary-service-status--travel_affected emotion-5"
+      >
+        <svg
+          class="emotion-6"
+          fill="none"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <circle
+            cx="8"
+            cy="8"
+            fill="#FE9001"
+            r="7.5"
+            stroke="white"
+          />
+          <path
+            d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+            fill="white"
+          />
+          <path
+            d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        63
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple non-branded service should display as badge with markers when serviceLegOptions is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 .cm-route-summary-service-name,
+.emotion-1 .cm-route-summary-service-marker {
+  background-color: #C2322E;
+  color: #fff;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.emotion-1 .cm-route-summary-service-marker {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  width: 3px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded cm-route-summary-service--badge emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d017fb8cdd82a312484df53e7bf3e1b4b39c1940a4ce077a6c617d2e/d324a6fb/@2x.png"
+        />
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        40
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-marker emotion-5"
+      >
+         
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple non-branded service should display in a box with 1 icon 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-4 {
+  margin: 0 4px;
+  color: #c3c7ce;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d017fb8cdd82a312484df53e7bf3e1b4b39c1940a4ce077a6c617d2e/d324a6fb/@2x.png"
+        />
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        40
+      </div>
+    </span>
+    <div
+      class="cm-route-summary-service-separator emotion-4"
+    >
+      /
+    </div>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        63
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService multiple non-branded service should display in a box with overflow when serviceLegOptions is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-5 {
+  margin-left: 4px;
+  font-size: 0.8125em;
+  font-weight: normal;
+  color: #727780;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--multiple cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d017fb8cdd82a312484df53e7bf3e1b4b39c1940a4ce077a6c617d2e/d324a6fb/@2x.png"
+        />
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-3"
+      >
+        40
+      </div>
+    </span>
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-overflow emotion-5"
+      >
+        +
+        1
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService should display as a badge with correct mode icon when serviceBranding is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 .cm-route-summary-service-name,
+.emotion-1 .cm-route-summary-service-marker {
+  background-color: #C2322E;
+  color: #fff;
+  padding: 2.5px 5px;
+  border-radius: 4px;
+  margin-right: 2px;
+}
+
+.emotion-1 .cm-route-summary-service-marker {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0;
+  width: 3px;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 20px;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--non-branded cm-route-summary-service--badge emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="bus"
+          fill="none"
+          height="24px"
+          viewBox="0 0 20 24"
+          width="20px"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.12375 18.3763C3.64043 18.3763 3.24863 18.7681 3.24863 19.2514V21.2519C3.24863 21.7352 3.64043 22.127 4.12375 22.127H4.99903C5.48235 22.127 5.87416 21.7352 5.87416 21.2519V19.2514C5.87416 18.7681 5.48235 18.3763 4.99903 18.3763H4.12375ZM15.0009 18.3763C14.5176 18.3763 14.1258 18.7681 14.1258 19.2514V21.2519C14.1258 21.7352 14.5176 22.127 15.0009 22.127H15.8762C16.3595 22.127 16.7513 21.7352 16.7513 21.2519V19.2514C16.7513 18.7681 16.3595 18.3763 15.8762 18.3763H15.0009Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M2.01757 6.04923C1.88607 6.45392 1.8188 6.90518 1.78438 7.49954C1.77239 7.49926 1.76037 7.49911 1.74832 7.49911C0.919726 7.49911 0.248016 8.17082 0.248016 8.99942V11.2499C0.248016 12.0785 0.919726 12.7502 1.74832 12.7502V16.3759C1.74832 17.3068 1.74832 17.7722 1.87071 18.1488C2.11805 18.9101 2.71488 19.5069 3.47613 19.7542C3.85279 19.8766 4.3182 19.8766 5.24903 19.8766H14.751C15.6818 19.8766 16.1472 19.8766 16.5239 19.7542C17.2851 19.5069 17.882 18.9101 18.1293 18.1488C18.2517 17.7722 18.2517 17.3068 18.2517 16.3759V12.7502C19.0803 12.7502 19.752 12.0785 19.752 11.2499V8.99942C19.752 8.17082 19.0803 7.49911 18.2517 7.49911C18.2396 7.49911 18.2276 7.49926 18.2156 7.49955C18.1812 6.90518 18.1139 6.45392 17.9824 6.04923C17.4383 4.37448 16.1252 3.06145 14.4505 2.51729C13.6219 2.24805 12.5979 2.24805 10.5501 2.24805H9.44989C7.40206 2.24805 6.37815 2.24805 5.5495 2.51729C3.87475 3.06145 2.56172 4.37448 2.01757 6.04923ZM6.99936 5.99881C6.58506 5.99881 6.24921 5.66296 6.24921 5.24866C6.24921 4.83436 6.58506 4.4985 6.99936 4.4985H13.0006C13.4149 4.4985 13.7507 4.83436 13.7507 5.24866C13.7507 5.66296 13.4149 5.99881 13.0006 5.99881H6.99936ZM3.30367 8.27663C3.2486 8.44613 3.2486 8.65556 3.2486 9.07444V11.925C3.2486 12.3439 3.2486 12.5533 3.30367 12.7228C3.41497 13.0654 3.68355 13.334 4.02611 13.4453C4.19561 13.5003 4.40504 13.5003 4.82392 13.5003H15.176C15.5949 13.5003 15.8043 13.5003 15.9738 13.4453C16.3164 13.334 16.585 13.0654 16.6963 12.7228C16.7513 12.5533 16.7513 12.3439 16.7513 11.925V9.07444C16.7513 8.65556 16.7513 8.44613 16.6963 8.27663C16.585 7.93407 16.3164 7.66549 15.9738 7.55419C15.8043 7.49911 15.5949 7.49911 15.176 7.49911H4.82392C4.40504 7.49911 4.19561 7.49911 4.02611 7.55419C3.68355 7.66549 3.41497 7.93407 3.30367 8.27663ZM16.6233 16.4982C16.6233 17.2576 16.0077 17.8732 15.2483 17.8732C14.4889 17.8732 13.8733 17.2576 13.8733 16.4982C13.8733 15.7388 14.4889 15.1232 15.2483 15.1232C16.0077 15.1232 16.6233 15.7388 16.6233 16.4982ZM6.12365 16.4982C6.12365 17.2576 5.50803 17.8732 4.74862 17.8732C3.98921 17.8732 3.37359 17.2576 3.37359 16.4982C3.37359 15.7388 3.98921 15.1232 4.74862 15.1232C5.50803 15.1232 6.12365 15.7388 6.12365 16.4982Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        40
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService should display as a box with correct mode icon when serviceBranding is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 20px;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="LondonBus"
+        data-service-mode="bus"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="bus"
+          fill="none"
+          height="24px"
+          viewBox="0 0 20 24"
+          width="20px"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M4.12375 18.3763C3.64043 18.3763 3.24863 18.7681 3.24863 19.2514V21.2519C3.24863 21.7352 3.64043 22.127 4.12375 22.127H4.99903C5.48235 22.127 5.87416 21.7352 5.87416 21.2519V19.2514C5.87416 18.7681 5.48235 18.3763 4.99903 18.3763H4.12375ZM15.0009 18.3763C14.5176 18.3763 14.1258 18.7681 14.1258 19.2514V21.2519C14.1258 21.7352 14.5176 22.127 15.0009 22.127H15.8762C16.3595 22.127 16.7513 21.7352 16.7513 21.2519V19.2514C16.7513 18.7681 16.3595 18.3763 15.8762 18.3763H15.0009Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M2.01757 6.04923C1.88607 6.45392 1.8188 6.90518 1.78438 7.49954C1.77239 7.49926 1.76037 7.49911 1.74832 7.49911C0.919726 7.49911 0.248016 8.17082 0.248016 8.99942V11.2499C0.248016 12.0785 0.919726 12.7502 1.74832 12.7502V16.3759C1.74832 17.3068 1.74832 17.7722 1.87071 18.1488C2.11805 18.9101 2.71488 19.5069 3.47613 19.7542C3.85279 19.8766 4.3182 19.8766 5.24903 19.8766H14.751C15.6818 19.8766 16.1472 19.8766 16.5239 19.7542C17.2851 19.5069 17.882 18.9101 18.1293 18.1488C18.2517 17.7722 18.2517 17.3068 18.2517 16.3759V12.7502C19.0803 12.7502 19.752 12.0785 19.752 11.2499V8.99942C19.752 8.17082 19.0803 7.49911 18.2517 7.49911C18.2396 7.49911 18.2276 7.49926 18.2156 7.49955C18.1812 6.90518 18.1139 6.45392 17.9824 6.04923C17.4383 4.37448 16.1252 3.06145 14.4505 2.51729C13.6219 2.24805 12.5979 2.24805 10.5501 2.24805H9.44989C7.40206 2.24805 6.37815 2.24805 5.5495 2.51729C3.87475 3.06145 2.56172 4.37448 2.01757 6.04923ZM6.99936 5.99881C6.58506 5.99881 6.24921 5.66296 6.24921 5.24866C6.24921 4.83436 6.58506 4.4985 6.99936 4.4985H13.0006C13.4149 4.4985 13.7507 4.83436 13.7507 5.24866C13.7507 5.66296 13.4149 5.99881 13.0006 5.99881H6.99936ZM3.30367 8.27663C3.2486 8.44613 3.2486 8.65556 3.2486 9.07444V11.925C3.2486 12.3439 3.2486 12.5533 3.30367 12.7228C3.41497 13.0654 3.68355 13.334 4.02611 13.4453C4.19561 13.5003 4.40504 13.5003 4.82392 13.5003H15.176C15.5949 13.5003 15.8043 13.5003 15.9738 13.4453C16.3164 13.334 16.585 13.0654 16.6963 12.7228C16.7513 12.5533 16.7513 12.3439 16.7513 11.925V9.07444C16.7513 8.65556 16.7513 8.44613 16.6963 8.27663C16.585 7.93407 16.3164 7.66549 15.9738 7.55419C15.8043 7.49911 15.5949 7.49911 15.176 7.49911H4.82392C4.40504 7.49911 4.19561 7.49911 4.02611 7.55419C3.68355 7.66549 3.41497 7.93407 3.30367 8.27663ZM16.6233 16.4982C16.6233 17.2576 16.0077 17.8732 15.2483 17.8732C14.4889 17.8732 13.8733 17.2576 13.8733 16.4982C13.8733 15.7388 14.4889 15.1232 15.2483 15.1232C16.0077 15.1232 16.6233 15.7388 16.6233 16.4982ZM6.12365 16.4982C6.12365 17.2576 5.50803 17.8732 4.74862 17.8732C3.98921 17.8732 3.37359 17.2576 3.37359 16.4982C3.37359 15.7388 3.98921 15.1232 4.74862 15.1232C5.50803 15.1232 6.12365 15.7388 6.12365 16.4982Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        40
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService single branded service should display as a badge when serviceBranding is false and serviceStyle is badge 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 15;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        Central
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService single branded service should display as icon by default 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service  emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d1f430ba45fc7d134d841d060ecad2b6e2ad60550ec46761e8f55f81/d324a6fb/@2x.png"
+          title="Central"
+        />
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService single branded service should display disruption correctly when in box 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-2.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 svg,
+.emotion-4 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-4.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-5 {
+  width: 24px;
+  height: 24px;
+  width: 15;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-status cm-route-summary-service-status--box cm-route-summary-service-status--travel_affected emotion-2"
+      >
+        <svg
+          class="emotion-3"
+          fill="none"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <circle
+            cx="8"
+            cy="8"
+            fill="#FE9001"
+            r="7.5"
+            stroke="white"
+          />
+          <path
+            d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+            fill="white"
+          />
+          <path
+            d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-mode emotion-4"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-5"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-6"
+      >
+        Central
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService single branded service should display disruption when icon 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-2 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-2.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-2.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 svg,
+.emotion-4 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-4.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service  emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-service-status cm-route-summary-service-status--box cm-route-summary-service-status--travel_affected emotion-2"
+      >
+        <svg
+          class="emotion-3"
+          fill="none"
+          height="16"
+          viewBox="0 0 16 16"
+          width="16"
+        >
+          <circle
+            cx="8"
+            cy="8"
+            fill="#FE9001"
+            r="7.5"
+            stroke="white"
+          />
+          <path
+            d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+            fill="white"
+          />
+          <path
+            d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-mode emotion-4"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <img
+          src="https://d3440lt1d9mf95.cloudfront.net/d1f430ba45fc7d134d841d060ecad2b6e2ad60550ec46761e8f55f81/d324a6fb/@2x.png"
+          title="Central"
+        />
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLegService single branded service should display in a box by default when serviceBranding is false 1`] = `
+.emotion-0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-0.cm-route-summary-service--multiple,
+.emotion-0.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-0.cm-route-summary-service--non-branded svg,
+.emotion-0.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-0.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-0.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-1 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-2 svg,
+.emotion-2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-2.cm-route-summary-mode {
+  color: #727780;
+  height: 16px;
+}
+
+.emotion-3 {
+  width: 24px;
+  height: 24px;
+  width: 15;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service cm-route-summary-service--non-branded emotion-0"
+  >
+    <span
+      class="cm-route-summary-service-item emotion-1"
+    >
+      <div
+        class="cm-route-summary-mode emotion-2"
+        data-service-brand="Underground"
+        data-service-mode="metro"
+      >
+        <svg
+          class="emotion-3"
+          data-vehicle="metro"
+          fill="none"
+          height="16"
+          viewBox="0 0 15 16"
+          width="15"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M12.7618 15.8291C12.9419 15.6851 12.9711 15.4223 12.827 15.2422L10.8266 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8206 10.0304 13.0833 10.1745 13.2634L12.1749 15.7639C12.319 15.944 12.5817 15.9732 12.7618 15.8291ZM4.7602 12.6765C4.94029 12.8206 4.96949 13.0834 4.82542 13.2635L2.82501 15.764C2.68094 15.9441 2.41815 15.9733 2.23807 15.8292C2.05798 15.6851 2.02878 15.4223 2.17285 15.2422L4.17326 12.7417C4.31733 12.5616 4.58011 12.5324 4.7602 12.6765ZM4.99944 14.5854C4.76881 14.5854 4.58185 14.7723 4.58185 15.003C4.58185 15.2336 4.76881 15.4206 4.99944 15.4206H10.0005C10.2311 15.4206 10.418 15.2336 10.418 15.003C10.418 14.7723 10.2311 14.5854 10.0005 14.5854H4.99944Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+            opacity="0.6"
+          />
+          <path
+            clip-rule="evenodd"
+            d="M0.248505 6.77351C0.248505 5.70063 0.324924 4.60484 0.85633 3.67281C1.68027 2.22772 3.53261 0.250031 7.49998 0.250031C11.4674 0.250031 13.3197 2.22772 14.1436 3.67282C14.675 4.60484 14.7515 5.70063 14.7515 6.77351V12.4192C14.7515 13.1557 14.1544 13.7528 13.4178 13.7528H11.6355L10.8267 12.7417C10.6826 12.5616 10.4198 12.5324 10.2397 12.6765C10.0596 12.8205 10.0304 13.0833 10.1745 13.2634L10.566 13.7528H4.43399L4.82545 13.2635C4.96952 13.0834 4.94033 12.8206 4.76024 12.6765C4.58015 12.5324 4.31737 12.5616 4.17329 12.7417L3.36445 13.7528H1.58211C0.845579 13.7528 0.248505 13.1557 0.248505 12.4192V6.77351ZM2.16543 6.50659C2.16543 5.64768 2.26478 4.76571 2.7804 4.07879C3.47429 3.15438 4.86767 2.00041 7.50001 2.00041C10.1324 2.00041 11.5257 3.15438 12.2196 4.07879C12.7353 4.76571 12.8346 5.64768 12.8346 6.50659V10.3356C12.8346 11.2562 12.0883 12.0024 11.1678 12.0024H3.83227C2.9117 12.0024 2.16543 11.2562 2.16543 10.3356V6.50659ZM3.49925 6.60135C3.49925 6.04286 3.49925 5.76361 3.57268 5.53761C3.72109 5.08086 4.07919 4.72276 4.53594 4.57436C4.76193 4.50093 5.04118 4.50093 5.59968 4.50093H6.11643C6.39568 4.50093 6.53531 4.50093 6.6483 4.53764C6.87668 4.61184 7.05573 4.79089 7.12993 5.01927C7.16665 5.13227 7.16665 5.27189 7.16665 5.55114V6.95142C7.16665 7.23067 7.16665 7.3703 7.12993 7.4833C7.05573 7.71167 6.87668 7.89072 6.6483 7.96492C6.53531 8.00164 6.39568 8.00164 6.11643 8.00164H4.54946C4.27022 8.00164 4.13059 8.00164 4.01759 7.96492C3.78922 7.89072 3.61017 7.71167 3.53597 7.4833C3.49925 7.3703 3.49925 7.23067 3.49925 6.95142V6.60135ZM4.99952 11.0022C5.55191 11.0022 5.99972 10.5544 5.99972 10.002C5.99972 9.44965 5.55191 9.00184 4.99952 9.00184C4.44712 9.00184 3.99931 9.44965 3.99931 10.002C3.99931 10.5544 4.44712 11.0022 4.99952 11.0022ZM10.0005 11.0022C10.5529 11.0022 11.0007 10.5544 11.0007 10.002C11.0007 9.44965 10.5529 9.00184 10.0005 9.00184C9.44814 9.00184 9.00033 9.44965 9.00033 10.002C9.00033 10.5544 9.44814 11.0022 10.0005 11.0022ZM7.8703 5.01927C7.83359 5.13227 7.83359 5.27189 7.83359 5.55114V6.95142C7.83359 7.23067 7.83359 7.3703 7.8703 7.4833C7.94451 7.71167 8.12356 7.89072 8.35193 7.96492C8.46493 8.00164 8.60455 8.00164 8.8838 8.00164H10.4508C10.73 8.00164 10.8696 8.00164 10.9826 7.96492C11.211 7.89072 11.3901 7.71167 11.4643 7.4833C11.501 7.3703 11.501 7.23067 11.501 6.95142V6.60135C11.501 6.04286 11.501 5.76361 11.4276 5.53761C11.2791 5.08086 10.921 4.72276 10.4643 4.57436C10.2383 4.50093 9.95905 4.50093 9.40056 4.50093H8.8838C8.60455 4.50093 8.46493 4.50093 8.35193 4.53764C8.12356 4.61185 7.94451 4.79089 7.8703 5.01927Z"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="cm-route-summary-service-name emotion-4"
+      >
+        Central
+      </div>
+    </span>
+  </div>
+</div>
+`;

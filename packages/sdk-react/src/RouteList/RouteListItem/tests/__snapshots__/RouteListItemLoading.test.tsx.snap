@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteListItemLoading should match snapshot with delay 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  display: inline-block;
+  height: 24px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+.emotion-2 {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+.emotion-4 {
+  display: inline-block;
+  height: 12px;
+  width: 75%;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+.emotion-5 {
+  display: inline-block;
+  height: 12px;
+  width: 15%;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-loading-skeleton emotion-1"
+      height="24"
+      width="100"
+    />
+    <div
+      class="cm-loading-skeleton emotion-2"
+      height="20"
+      width="50"
+    />
+  </div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-loading-skeleton emotion-4"
+      height="12"
+      width="75%"
+    />
+    <div
+      class="cm-loading-skeleton emotion-5"
+      height="12"
+      width="15%"
+    />
+  </div>
+</div>
+`;
+
+exports[`RouteListItemLoading should match snapshot without delays 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  display: inline-block;
+  height: 24px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.emotion-2 {
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.emotion-4 {
+  display: inline-block;
+  height: 12px;
+  width: 75%;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+.emotion-5 {
+  display: inline-block;
+  height: 12px;
+  width: 15%;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-loading-skeleton emotion-1"
+      height="24"
+      width="100"
+    />
+    <div
+      class="cm-loading-skeleton emotion-2"
+      height="20"
+      width="50"
+    />
+  </div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-loading-skeleton emotion-4"
+      height="12"
+      width="75%"
+    />
+    <div
+      class="cm-loading-skeleton emotion-5"
+      height="12"
+      width="15%"
+    />
+  </div>
+</div>
+`;

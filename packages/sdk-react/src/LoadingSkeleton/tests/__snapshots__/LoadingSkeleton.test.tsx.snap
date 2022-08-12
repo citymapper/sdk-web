@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingSkeleton matches snapshot 1`] = `
+.emotion-0 {
+  display: inline-block;
+  height: 10px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dfe3e9;
+  -webkit-animation: shimmer 3s infinite;
+  animation: shimmer 3s infinite;
+  -webkit-animation-delay: 0ms;
+  animation-delay: 0ms;
+}
+
+<body>
+  <div>
+    <div
+      class="cm-loading-skeleton emotion-0"
+      height="10"
+      width="100"
+    />
+  </div>
+</body>
+`;

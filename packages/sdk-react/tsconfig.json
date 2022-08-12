@@ -1,0 +1,16 @@
+{
+  "exclude": ["stories/*", ".storybook/*", "dist"],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2017", "es7", "es6", "dom"],
+    "types": ["node", "jest"],
+    "declaration": true,
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "typeRoots": ["../../node_modules/@types", "node_modules/@types", "@types"]
+  }
+}

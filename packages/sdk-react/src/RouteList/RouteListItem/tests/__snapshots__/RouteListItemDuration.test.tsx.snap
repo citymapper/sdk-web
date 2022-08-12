@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteListItemDuration should render as live 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  margin-right: 4px;
+}
+
+.emotion-1 svg {
+  width: 8px;
+  height: 8px;
+}
+
+.emotion-2 {
+  width: 24px;
+  height: 24px;
+}
+
+.emotion-3 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-4 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+<div>
+  <div
+    class="cm-route-duration-root emotion-0"
+    data-is-live="true"
+  >
+    <div
+      class="cm-departure-live-blip emotion-1"
+    >
+      <svg
+        class="emotion-2"
+        fill="none"
+        viewBox="0 0 8 8"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M3.46447 3.46447C4.40215 2.52678 5.67392 2 7 2C7.55228 2 8 1.55228 8 1C8 0.447715 7.55228 0 7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 7.55228 0.447715 8 1 8C1.55228 8 2 7.55228 2 7C2 5.67392 2.52678 4.40215 3.46447 3.46447ZM5.93934 5.93934C6.22064 5.65804 6.60218 5.5 7 5.5C7.55228 5.5 8 5.05228 8 4.5C8 3.94772 7.55228 3.5 7 3.5C6.07174 3.5 5.1815 3.86875 4.52513 4.52513C3.86875 5.1815 3.5 6.07174 3.5 7C3.5 7.55228 3.94772 8 4.5 8C5.05228 8 5.5 7.55228 5.5 7C5.5 6.60218 5.65804 6.22064 5.93934 5.93934Z"
+          fill="#FFD600"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+    <div
+      class="cm-route-duration-value emotion-3"
+    >
+      120
+    </div>
+    <div
+      class="cm-route-duration-units emotion-4"
+    >
+      min
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemDuration should render just the duration 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-1 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-2 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+<div>
+  <div
+    class="cm-route-duration-root emotion-0"
+  >
+    <div
+      class="cm-route-duration-value emotion-1"
+    >
+      120
+    </div>
+    <div
+      class="cm-route-duration-units emotion-2"
+    >
+      min
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemDuration should render with min-width 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: 100px;
+}
+
+.emotion-1 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-2 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+<div>
+  <div
+    class="cm-route-duration-root emotion-0"
+  >
+    <div
+      class="cm-route-duration-value emotion-1"
+    >
+      120
+    </div>
+    <div
+      class="cm-route-duration-units emotion-2"
+    >
+      min
+    </div>
+  </div>
+</div>
+`;

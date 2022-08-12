@@ -1,0 +1,1411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RouteListItemDetails should not show second row when no transit legs exist in route 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+
+.emotion-2 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-2:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.emotion-3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #8c9199;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-4 svg,
+.emotion-4 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-4.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-5 {
+  width: 24px;
+  height: 24px;
+  width: 12;
+  height: 24;
+}
+
+.emotion-6 {
+  font-size: 0.8125em;
+  color: #424750;
+  margin-left: 2px;
+}
+
+.emotion-7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-9 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-10 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-summary emotion-1"
+    >
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-transfer emotion-3"
+        >
+          <div
+            class="cm-route-summary-mode emotion-4"
+            data-service-mode="walk"
+          >
+            <svg
+              class="emotion-5"
+              fill="none"
+              height="24"
+              viewBox="0 0 12 24"
+              width="12"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M7.6897 7.20732C7.5494 6.87996 7.19826 6.69638 6.84937 6.76799C6.50048 6.8396 6.25005 7.14666 6.25005 7.50282V8.50302C6.25005 8.63899 6.287 8.77239 6.35695 8.88897L7.85725 11.3895C7.90718 11.4727 7.97277 11.5454 8.05039 11.6036L10.0508 13.1041C10.3822 13.3526 10.8524 13.2855 11.101 12.9541C11.3496 12.6226 11.2825 12.1524 10.951 11.9038L9.11102 10.5237L7.6897 7.20732ZM7.75034 13.0037C7.75034 12.7003 7.56757 12.4268 7.28725 12.3107C7.00694 12.1946 6.68429 12.2587 6.46975 12.4733L6.08209 12.8609C5.5492 13.3938 5.24983 14.1166 5.24984 14.8702L5.24984 15.6675L1.00071 19.4445C0.720994 19.6931 0.667324 20.1099 0.874916 20.4213L1.87512 21.9216C2.08236 22.2324 2.48677 22.3434 2.82365 22.1818C3.16053 22.0203 3.32718 21.6355 3.21452 21.2793L2.82579 20.05L6.91866 17.4455C7.43667 17.1158 7.75035 16.5444 7.75035 15.9304L7.75034 13.0037Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                opacity="0.8"
+              />
+              <path
+                clip-rule="evenodd"
+                d="M6.5001 1.50146C5.39531 1.50146 4.49969 2.39708 4.49969 3.50187C4.49969 4.60667 5.39531 5.50228 6.5001 5.50228C7.60489 5.50228 8.50051 4.60667 8.50051 3.50187C8.50051 2.39708 7.60489 1.50146 6.5001 1.50146ZM2.71233 10.8156L3.48552 9.86673L3.72678 12.7619C3.73674 12.8814 3.72698 13.0017 3.6979 13.118C3.46829 14.0365 3.98808 14.7868 4.69704 15.0759L5.32904 16.3399C5.33243 16.3467 5.33592 16.3534 5.33951 16.3601L8.84022 22.8614C8.94036 23.0473 9.11424 23.1825 9.31917 23.2336C9.5241 23.2847 9.74108 23.2471 9.91682 23.1299L11.4171 22.1297C11.7207 21.9273 11.8347 21.5358 11.687 21.2021C11.5394 20.8684 11.1731 20.6893 10.8191 20.7778L9.72671 21.0509L7.65477 15.871C7.71564 15.7626 7.75036 15.6375 7.75036 15.5043V13.0038V7.50269C7.75036 7.30374 7.67132 7.11294 7.53064 6.97226L7.4236 6.86521C7.06424 6.50585 6.58761 6.29073 6.08365 6.25709C6.05613 6.25401 6.02821 6.25244 6 6.25244H5.94423H5.16047C4.17341 6.25244 3.26204 6.78133 2.77232 7.63834L1.34787 10.1311C1.30093 10.2133 1.26995 10.3036 1.25657 10.3972L0.756469 13.898C0.69788 14.3082 0.982864 14.6881 1.393 14.7467C1.80313 14.8053 2.18311 14.5203 2.2417 14.1102L2.71233 10.8156Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="cm-route-summary-duration emotion-6"
+          >
+            6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cm-route-list-item-price-and-duration emotion-7"
+    >
+      <div
+        class="cm-route-duration-root emotion-8"
+        data-is-live="false"
+      >
+        <div
+          class="cm-route-duration-value emotion-9"
+        >
+          5
+        </div>
+        <div
+          class="cm-route-duration-units emotion-10"
+        >
+          min
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemDetails should render route without journey times 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+
+.emotion-2 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-2:not(:last-of-type) {
+  margin-right: 0px;
+}
+
+.emotion-3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3.cm-route-summary-service--multiple,
+.emotion-3.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-3.cm-route-summary-service--non-branded svg,
+.emotion-3.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-3.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-3.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 svg,
+.emotion-5 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-5.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-6:after {
+  display: inline-block;
+  content: '•';
+  font-size: 1em;
+  margin-top: 8px;
+  padding: 0 4px;
+  color: #727780;
+}
+
+.emotion-12 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-12:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #8c9199;
+}
+
+.emotion-15 {
+  width: 24px;
+  height: 24px;
+  width: 12;
+  height: 24;
+}
+
+.emotion-16 {
+  font-size: 0.8125em;
+  color: #424750;
+  margin-left: 2px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+}
+
+.emotion-18 {
+  font-weight: 600;
+  font-size: 0.8125em;
+  line-height: 0.983125em;
+  margin-top: 2px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #0f69f0;
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-20 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-21 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+.emotion-23 {
+  font-size: 0.8125em;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 14px;
+}
+
+.emotion-26 {
+  color: #727780;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-summary emotion-1"
+    >
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="DLR"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/2ce3a2c6274a482874eba939740507160683e2d43b4902d948087880/d324a6fb/@2x.png"
+                title="DLR"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="Underground"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/ccfa974722e4804ade7e6f87284716e5a02f06d2a1ef0df719af618e/d324a6fb/@2x.png"
+                title="Jubilee"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-12"
+      >
+        <div
+          class="cm-route-summary-transfer emotion-13"
+        >
+          <div
+            class="cm-route-summary-mode emotion-5"
+            data-service-mode="walk"
+          >
+            <svg
+              class="emotion-15"
+              fill="none"
+              height="24"
+              viewBox="0 0 12 24"
+              width="12"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M7.6897 7.20732C7.5494 6.87996 7.19826 6.69638 6.84937 6.76799C6.50048 6.8396 6.25005 7.14666 6.25005 7.50282V8.50302C6.25005 8.63899 6.287 8.77239 6.35695 8.88897L7.85725 11.3895C7.90718 11.4727 7.97277 11.5454 8.05039 11.6036L10.0508 13.1041C10.3822 13.3526 10.8524 13.2855 11.101 12.9541C11.3496 12.6226 11.2825 12.1524 10.951 11.9038L9.11102 10.5237L7.6897 7.20732ZM7.75034 13.0037C7.75034 12.7003 7.56757 12.4268 7.28725 12.3107C7.00694 12.1946 6.68429 12.2587 6.46975 12.4733L6.08209 12.8609C5.5492 13.3938 5.24983 14.1166 5.24984 14.8702L5.24984 15.6675L1.00071 19.4445C0.720994 19.6931 0.667324 20.1099 0.874916 20.4213L1.87512 21.9216C2.08236 22.2324 2.48677 22.3434 2.82365 22.1818C3.16053 22.0203 3.32718 21.6355 3.21452 21.2793L2.82579 20.05L6.91866 17.4455C7.43667 17.1158 7.75035 16.5444 7.75035 15.9304L7.75034 13.0037Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                opacity="0.8"
+              />
+              <path
+                clip-rule="evenodd"
+                d="M6.5001 1.50146C5.39531 1.50146 4.49969 2.39708 4.49969 3.50187C4.49969 4.60667 5.39531 5.50228 6.5001 5.50228C7.60489 5.50228 8.50051 4.60667 8.50051 3.50187C8.50051 2.39708 7.60489 1.50146 6.5001 1.50146ZM2.71233 10.8156L3.48552 9.86673L3.72678 12.7619C3.73674 12.8814 3.72698 13.0017 3.6979 13.118C3.46829 14.0365 3.98808 14.7868 4.69704 15.0759L5.32904 16.3399C5.33243 16.3467 5.33592 16.3534 5.33951 16.3601L8.84022 22.8614C8.94036 23.0473 9.11424 23.1825 9.31917 23.2336C9.5241 23.2847 9.74108 23.2471 9.91682 23.1299L11.4171 22.1297C11.7207 21.9273 11.8347 21.5358 11.687 21.2021C11.5394 20.8684 11.1731 20.6893 10.8191 20.7778L9.72671 21.0509L7.65477 15.871C7.71564 15.7626 7.75036 15.6375 7.75036 15.5043V13.0038V7.50269C7.75036 7.30374 7.67132 7.11294 7.53064 6.97226L7.4236 6.86521C7.06424 6.50585 6.58761 6.29073 6.08365 6.25709C6.05613 6.25401 6.02821 6.25244 6 6.25244H5.94423H5.16047C4.17341 6.25244 3.26204 6.78133 2.77232 7.63834L1.34787 10.1311C1.30093 10.2133 1.26995 10.3036 1.25657 10.3972L0.756469 13.898C0.69788 14.3082 0.982864 14.6881 1.393 14.7467C1.80313 14.8053 2.18311 14.5203 2.2417 14.1102L2.71233 10.8156Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="cm-route-summary-duration emotion-16"
+          >
+            6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cm-route-list-item-price-and-duration emotion-17"
+    >
+      <div
+        class="cm-route-price-root emotion-18"
+      >
+        £2.60
+      </div>
+      <div
+        class="cm-route-duration-root emotion-19"
+        data-is-live="false"
+      >
+        <div
+          class="cm-route-duration-value emotion-20"
+        >
+          35
+        </div>
+        <div
+          class="cm-route-duration-units emotion-21"
+        >
+          min
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-departures emotion-23"
+      data-departure-type="frequency"
+    >
+      <div
+        class="cm-departure-frequency-root emotion-24"
+      >
+        <span
+          class="cm-departure-frequency-departures emotion-25"
+        >
+          Every 
+          9
+           min
+        </span>
+         
+        <span
+          class="cm-departure-frequency-origin emotion-26"
+        >
+          from 
+          Stratford International
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemDetails should render route without price 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+
+.emotion-2 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-2:not(:last-of-type) {
+  margin-right: 0px;
+}
+
+.emotion-3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3.cm-route-summary-service--multiple,
+.emotion-3.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-3.cm-route-summary-service--non-branded svg,
+.emotion-3.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-3.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-3.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 svg,
+.emotion-5 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-5.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-6:after {
+  display: inline-block;
+  content: '•';
+  font-size: 1em;
+  margin-top: 8px;
+  padding: 0 4px;
+  color: #727780;
+}
+
+.emotion-12 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-12:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #8c9199;
+}
+
+.emotion-15 {
+  width: 24px;
+  height: 24px;
+  width: 12;
+  height: 24;
+}
+
+.emotion-16 {
+  font-size: 0.8125em;
+  color: #424750;
+  margin-left: 2px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+}
+
+.emotion-18 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-19 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-20 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+.emotion-22 {
+  font-size: 0.8125em;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 14px;
+}
+
+.emotion-25 {
+  color: #727780;
+}
+
+.emotion-26 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8125em;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 14px;
+}
+
+.emotion-26 svg {
+  width: 13px;
+  height: 13px;
+  color: #424750;
+  margin: 0 4px;
+  opacity: 0.4;
+}
+
+.emotion-27 {
+  width: 24px;
+  height: 24px;
+  width: 24;
+  height: 24;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-summary emotion-1"
+    >
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="DLR"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/2ce3a2c6274a482874eba939740507160683e2d43b4902d948087880/d324a6fb/@2x.png"
+                title="DLR"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="Underground"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/ccfa974722e4804ade7e6f87284716e5a02f06d2a1ef0df719af618e/d324a6fb/@2x.png"
+                title="Jubilee"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-12"
+      >
+        <div
+          class="cm-route-summary-transfer emotion-13"
+        >
+          <div
+            class="cm-route-summary-mode emotion-5"
+            data-service-mode="walk"
+          >
+            <svg
+              class="emotion-15"
+              fill="none"
+              height="24"
+              viewBox="0 0 12 24"
+              width="12"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M7.6897 7.20732C7.5494 6.87996 7.19826 6.69638 6.84937 6.76799C6.50048 6.8396 6.25005 7.14666 6.25005 7.50282V8.50302C6.25005 8.63899 6.287 8.77239 6.35695 8.88897L7.85725 11.3895C7.90718 11.4727 7.97277 11.5454 8.05039 11.6036L10.0508 13.1041C10.3822 13.3526 10.8524 13.2855 11.101 12.9541C11.3496 12.6226 11.2825 12.1524 10.951 11.9038L9.11102 10.5237L7.6897 7.20732ZM7.75034 13.0037C7.75034 12.7003 7.56757 12.4268 7.28725 12.3107C7.00694 12.1946 6.68429 12.2587 6.46975 12.4733L6.08209 12.8609C5.5492 13.3938 5.24983 14.1166 5.24984 14.8702L5.24984 15.6675L1.00071 19.4445C0.720994 19.6931 0.667324 20.1099 0.874916 20.4213L1.87512 21.9216C2.08236 22.2324 2.48677 22.3434 2.82365 22.1818C3.16053 22.0203 3.32718 21.6355 3.21452 21.2793L2.82579 20.05L6.91866 17.4455C7.43667 17.1158 7.75035 16.5444 7.75035 15.9304L7.75034 13.0037Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                opacity="0.8"
+              />
+              <path
+                clip-rule="evenodd"
+                d="M6.5001 1.50146C5.39531 1.50146 4.49969 2.39708 4.49969 3.50187C4.49969 4.60667 5.39531 5.50228 6.5001 5.50228C7.60489 5.50228 8.50051 4.60667 8.50051 3.50187C8.50051 2.39708 7.60489 1.50146 6.5001 1.50146ZM2.71233 10.8156L3.48552 9.86673L3.72678 12.7619C3.73674 12.8814 3.72698 13.0017 3.6979 13.118C3.46829 14.0365 3.98808 14.7868 4.69704 15.0759L5.32904 16.3399C5.33243 16.3467 5.33592 16.3534 5.33951 16.3601L8.84022 22.8614C8.94036 23.0473 9.11424 23.1825 9.31917 23.2336C9.5241 23.2847 9.74108 23.2471 9.91682 23.1299L11.4171 22.1297C11.7207 21.9273 11.8347 21.5358 11.687 21.2021C11.5394 20.8684 11.1731 20.6893 10.8191 20.7778L9.72671 21.0509L7.65477 15.871C7.71564 15.7626 7.75036 15.6375 7.75036 15.5043V13.0038V7.50269C7.75036 7.30374 7.67132 7.11294 7.53064 6.97226L7.4236 6.86521C7.06424 6.50585 6.58761 6.29073 6.08365 6.25709C6.05613 6.25401 6.02821 6.25244 6 6.25244H5.94423H5.16047C4.17341 6.25244 3.26204 6.78133 2.77232 7.63834L1.34787 10.1311C1.30093 10.2133 1.26995 10.3036 1.25657 10.3972L0.756469 13.898C0.69788 14.3082 0.982864 14.6881 1.393 14.7467C1.80313 14.8053 2.18311 14.5203 2.2417 14.1102L2.71233 10.8156Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="cm-route-summary-duration emotion-16"
+          >
+            6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cm-route-list-item-price-and-duration emotion-17"
+    >
+      <div
+        class="cm-route-duration-root emotion-18"
+        data-is-live="false"
+      >
+        <div
+          class="cm-route-duration-value emotion-19"
+        >
+          35
+        </div>
+        <div
+          class="cm-route-duration-units emotion-20"
+        >
+          min
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-departures emotion-22"
+      data-departure-type="frequency"
+    >
+      <div
+        class="cm-departure-frequency-root emotion-23"
+      >
+        <span
+          class="cm-departure-frequency-departures emotion-24"
+        >
+          Every 
+          9
+           min
+        </span>
+         
+        <span
+          class="cm-departure-frequency-origin emotion-25"
+        >
+          from 
+          Stratford International
+        </span>
+      </div>
+    </div>
+    <div
+      class="cm-route-times emotion-26"
+    >
+      16:33
+      <svg
+        class="emotion-27"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12.7626 3.76256C13.446 3.07915 14.554 3.07915 15.2374 3.76256L22.2374 10.7626C22.9209 11.446 22.9209 12.554 22.2374 13.2374L15.2374 20.2374C14.554 20.9209 13.446 20.9209 12.7626 20.2374C12.0791 19.554 12.0791 18.446 12.7626 17.7626L16.7751 13.75H3C2.0335 13.75 1.25 12.9665 1.25 12C1.25 11.0335 2.0335 10.25 3 10.25H16.7751L12.7626 6.23744C12.0791 5.55402 12.0791 4.44598 12.7626 3.76256Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      17:13
+    </div>
+  </div>
+</div>
+`;
+
+exports[`RouteListItemDetails should render standard route 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: -8px;
+}
+
+.emotion-2 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-2:not(:last-of-type) {
+  margin-right: 0px;
+}
+
+.emotion-3 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-3.cm-route-summary-service--multiple,
+.emotion-3.cm-route-summary-service--non-branded {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #a7abb3;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+.emotion-3.cm-route-summary-service--non-branded svg,
+.emotion-3.cm-route-summary-service--non-branded img {
+  margin-right: 2px;
+}
+
+.emotion-3.cm-route-summary-service--badge {
+  border: none;
+  padding: 0;
+}
+
+.emotion-3.cm-route-summary-service--badge .cm-route-summary-service-name {
+  height: 24px;
+}
+
+.emotion-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.emotion-5 svg,
+.emotion-5 img {
+  height: 100%;
+  width: 100%;
+}
+
+.emotion-5.cm-route-summary-mode {
+  color: #727780;
+  height: 24px;
+}
+
+.emotion-6:after {
+  display: inline-block;
+  content: '•';
+  font-size: 1em;
+  margin-top: 8px;
+  padding: 0 4px;
+  color: #727780;
+}
+
+.emotion-12 {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.emotion-12:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #8c9199;
+}
+
+.emotion-15 {
+  width: 24px;
+  height: 24px;
+  width: 12;
+  height: 24;
+}
+
+.emotion-16 {
+  font-size: 0.8125em;
+  color: #424750;
+  margin-left: 2px;
+}
+
+.emotion-17 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+}
+
+.emotion-18 {
+  font-weight: 600;
+  font-size: 0.8125em;
+  line-height: 0.983125em;
+  margin-top: 2px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: #0f69f0;
+}
+
+.emotion-19 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: flex-start;
+  align-self: flex-start;
+  -webkit-align-items: baseline;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  min-width: undefinedpx;
+}
+
+.emotion-20 {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.emotion-21 {
+  font-size: 0.6875em;
+  font-weight: 400;
+}
+
+.emotion-23 {
+  font-size: 0.8125em;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-top: 14px;
+}
+
+.emotion-26 {
+  color: #727780;
+}
+
+.emotion-27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.8125em;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 14px;
+}
+
+.emotion-27 svg {
+  width: 13px;
+  height: 13px;
+  color: #424750;
+  margin: 0 4px;
+  opacity: 0.4;
+}
+
+.emotion-28 {
+  width: 24px;
+  height: 24px;
+  width: 24;
+  height: 24;
+}
+
+<div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-summary emotion-1"
+    >
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="DLR"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/2ce3a2c6274a482874eba939740507160683e2d43b4902d948087880/d324a6fb/@2x.png"
+                title="DLR"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-2"
+      >
+        <div
+          class="cm-route-summary-service  emotion-3"
+        >
+          <span
+            class="cm-route-summary-service-item emotion-4"
+          >
+            <div
+              class="cm-route-summary-mode emotion-5"
+              data-service-brand="Underground"
+              data-service-mode="metro"
+            >
+              <img
+                src="https://d3440lt1d9mf95.cloudfront.net/ccfa974722e4804ade7e6f87284716e5a02f06d2a1ef0df719af618e/d324a6fb/@2x.png"
+                title="Jubilee"
+              />
+            </div>
+          </span>
+        </div>
+      </div>
+      <div
+        class="cm-route-summary-separator emotion-6"
+      />
+      <div
+        class="cm-route-summary-leg emotion-12"
+      >
+        <div
+          class="cm-route-summary-transfer emotion-13"
+        >
+          <div
+            class="cm-route-summary-mode emotion-5"
+            data-service-mode="walk"
+          >
+            <svg
+              class="emotion-15"
+              fill="none"
+              height="24"
+              viewBox="0 0 12 24"
+              width="12"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M7.6897 7.20732C7.5494 6.87996 7.19826 6.69638 6.84937 6.76799C6.50048 6.8396 6.25005 7.14666 6.25005 7.50282V8.50302C6.25005 8.63899 6.287 8.77239 6.35695 8.88897L7.85725 11.3895C7.90718 11.4727 7.97277 11.5454 8.05039 11.6036L10.0508 13.1041C10.3822 13.3526 10.8524 13.2855 11.101 12.9541C11.3496 12.6226 11.2825 12.1524 10.951 11.9038L9.11102 10.5237L7.6897 7.20732ZM7.75034 13.0037C7.75034 12.7003 7.56757 12.4268 7.28725 12.3107C7.00694 12.1946 6.68429 12.2587 6.46975 12.4733L6.08209 12.8609C5.5492 13.3938 5.24983 14.1166 5.24984 14.8702L5.24984 15.6675L1.00071 19.4445C0.720994 19.6931 0.667324 20.1099 0.874916 20.4213L1.87512 21.9216C2.08236 22.2324 2.48677 22.3434 2.82365 22.1818C3.16053 22.0203 3.32718 21.6355 3.21452 21.2793L2.82579 20.05L6.91866 17.4455C7.43667 17.1158 7.75035 16.5444 7.75035 15.9304L7.75034 13.0037Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+                opacity="0.8"
+              />
+              <path
+                clip-rule="evenodd"
+                d="M6.5001 1.50146C5.39531 1.50146 4.49969 2.39708 4.49969 3.50187C4.49969 4.60667 5.39531 5.50228 6.5001 5.50228C7.60489 5.50228 8.50051 4.60667 8.50051 3.50187C8.50051 2.39708 7.60489 1.50146 6.5001 1.50146ZM2.71233 10.8156L3.48552 9.86673L3.72678 12.7619C3.73674 12.8814 3.72698 13.0017 3.6979 13.118C3.46829 14.0365 3.98808 14.7868 4.69704 15.0759L5.32904 16.3399C5.33243 16.3467 5.33592 16.3534 5.33951 16.3601L8.84022 22.8614C8.94036 23.0473 9.11424 23.1825 9.31917 23.2336C9.5241 23.2847 9.74108 23.2471 9.91682 23.1299L11.4171 22.1297C11.7207 21.9273 11.8347 21.5358 11.687 21.2021C11.5394 20.8684 11.1731 20.6893 10.8191 20.7778L9.72671 21.0509L7.65477 15.871C7.71564 15.7626 7.75036 15.6375 7.75036 15.5043V13.0038V7.50269C7.75036 7.30374 7.67132 7.11294 7.53064 6.97226L7.4236 6.86521C7.06424 6.50585 6.58761 6.29073 6.08365 6.25709C6.05613 6.25401 6.02821 6.25244 6 6.25244H5.94423H5.16047C4.17341 6.25244 3.26204 6.78133 2.77232 7.63834L1.34787 10.1311C1.30093 10.2133 1.26995 10.3036 1.25657 10.3972L0.756469 13.898C0.69788 14.3082 0.982864 14.6881 1.393 14.7467C1.80313 14.8053 2.18311 14.5203 2.2417 14.1102L2.71233 10.8156Z"
+                fill="currentColor"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div
+            class="cm-route-summary-duration emotion-16"
+          >
+            6
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="cm-route-list-item-price-and-duration emotion-17"
+    >
+      <div
+        class="cm-route-price-root emotion-18"
+      >
+        £2.60
+      </div>
+      <div
+        class="cm-route-duration-root emotion-19"
+        data-is-live="false"
+      >
+        <div
+          class="cm-route-duration-value emotion-20"
+        >
+          35
+        </div>
+        <div
+          class="cm-route-duration-units emotion-21"
+        >
+          min
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="cm-route-list-item-row emotion-0"
+  >
+    <div
+      class="cm-route-departures emotion-23"
+      data-departure-type="frequency"
+    >
+      <div
+        class="cm-departure-frequency-root emotion-24"
+      >
+        <span
+          class="cm-departure-frequency-departures emotion-25"
+        >
+          Every 
+          9
+           min
+        </span>
+         
+        <span
+          class="cm-departure-frequency-origin emotion-26"
+        >
+          from 
+          Stratford International
+        </span>
+      </div>
+    </div>
+    <div
+      class="cm-route-times emotion-27"
+    >
+      16:33
+      <svg
+        class="emotion-28"
+        fill="none"
+        height="24"
+        viewBox="0 0 24 24"
+        width="24"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12.7626 3.76256C13.446 3.07915 14.554 3.07915 15.2374 3.76256L22.2374 10.7626C22.9209 11.446 22.9209 12.554 22.2374 13.2374L15.2374 20.2374C14.554 20.9209 13.446 20.9209 12.7626 20.2374C12.0791 19.554 12.0791 18.446 12.7626 17.7626L16.7751 13.75H3C2.0335 13.75 1.25 12.9665 1.25 12C1.25 11.0335 2.0335 10.25 3 10.25H16.7751L12.7626 6.23744C12.0791 5.55402 12.0791 4.44598 12.7626 3.76256Z"
+          fill="currentColor"
+          fill-rule="evenodd"
+        />
+      </svg>
+      17:13
+    </div>
+  </div>
+</div>
+`;

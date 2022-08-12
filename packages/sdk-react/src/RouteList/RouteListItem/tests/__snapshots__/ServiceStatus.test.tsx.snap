@@ -1,0 +1,385 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServiceStatus travel_affected should render correctly with default props 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--travel_affected emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#FE9001"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+        fill="white"
+      />
+      <path
+        d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ServiceStatus travel_affected should render correctly with isBox prop 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--box cm-route-summary-service-status--travel_affected emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#FE9001"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+        fill="white"
+      />
+      <path
+        d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ServiceStatus travel_affected should render correctly with multiService prop 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--small cm-route-summary-service-status--travel_affected emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#FE9001"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        d="M7.99979 5.97512C8.68949 5.97512 9.2486 5.42105 9.2486 4.73756C9.2486 4.05407 8.68949 3.5 7.99979 3.5C7.31009 3.5 6.75098 4.05407 6.75098 4.73756C6.75098 5.42105 7.31009 5.97512 7.99979 5.97512Z"
+        fill="white"
+      />
+      <path
+        d="M7.9998 7.25414C7.44804 7.25414 7.00075 7.70143 7.00075 8.25319V11.001C7.00075 11.5527 7.44804 12 7.9998 12C8.55156 12 8.99884 11.5527 8.99884 11.001V8.25319C8.99884 7.70143 8.55156 7.25414 7.9998 7.25414Z"
+        fill="white"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ServiceStatus travel_prevented should render correctly with default props 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--travel_prevented emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#D22020"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M4.79289 4.79289C5.18342 4.40237 5.81658 4.40237 6.20711 4.79289L8 6.58579L9.79289 4.79289C10.1834 4.40237 10.8166 4.40237 11.2071 4.79289C11.5976 5.18342 11.5976 5.81658 11.2071 6.20711L9.41421 8L11.2071 9.79289C11.5976 10.1834 11.5976 10.8166 11.2071 11.2071C10.8166 11.5976 10.1834 11.5976 9.79289 11.2071L8 9.41421L6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071C4.40237 10.8166 4.40237 10.1834 4.79289 9.79289L6.58579 8L4.79289 6.20711C4.40237 5.81658 4.40237 5.18342 4.79289 4.79289Z"
+        fill="white"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ServiceStatus travel_prevented should render correctly with isBox prop 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--box cm-route-summary-service-status--travel_prevented emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#D22020"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M4.79289 4.79289C5.18342 4.40237 5.81658 4.40237 6.20711 4.79289L8 6.58579L9.79289 4.79289C10.1834 4.40237 10.8166 4.40237 11.2071 4.79289C11.5976 5.18342 11.5976 5.81658 11.2071 6.20711L9.41421 8L11.2071 9.79289C11.5976 10.1834 11.5976 10.8166 11.2071 11.2071C10.8166 11.5976 10.1834 11.5976 9.79289 11.2071L8 9.41421L6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071C4.40237 10.8166 4.40237 10.1834 4.79289 9.79289L6.58579 8L4.79289 6.20711C4.40237 5.81658 4.40237 5.18342 4.79289 4.79289Z"
+        fill="white"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`ServiceStatus travel_prevented should render correctly with multiService prop 1`] = `
+.emotion-0 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+}
+
+.emotion-0 svg {
+  width: 100%;
+  height: 100%;
+}
+
+.emotion-0.cm-route-summary-service-status--box {
+  top: -8px;
+  right: -8px;
+}
+
+.emotion-0.cm-route-summary-service-status--small {
+  width: 11px;
+  height: 11px;
+  top: -6px;
+  right: -4px;
+}
+
+.emotion-1 {
+  width: 24px;
+  height: 24px;
+  width: 16;
+  height: 16;
+}
+
+<div>
+  <div
+    class="cm-route-summary-service-status cm-route-summary-service-status--small cm-route-summary-service-status--travel_prevented emotion-0"
+  >
+    <svg
+      class="emotion-1"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+    >
+      <circle
+        cx="8"
+        cy="8"
+        fill="#D22020"
+        r="7.5"
+        stroke="white"
+      />
+      <path
+        clip-rule="evenodd"
+        d="M4.79289 4.79289C5.18342 4.40237 5.81658 4.40237 6.20711 4.79289L8 6.58579L9.79289 4.79289C10.1834 4.40237 10.8166 4.40237 11.2071 4.79289C11.5976 5.18342 11.5976 5.81658 11.2071 6.20711L9.41421 8L11.2071 9.79289C11.5976 10.1834 11.5976 10.8166 11.2071 11.2071C10.8166 11.5976 10.1834 11.5976 9.79289 11.2071L8 9.41421L6.20711 11.2071C5.81658 11.5976 5.18342 11.5976 4.79289 11.2071C4.40237 10.8166 4.40237 10.1834 4.79289 9.79289L6.58579 8L4.79289 6.20711C4.40237 5.81658 4.40237 5.18342 4.79289 4.79289Z"
+        fill="white"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</div>
+`;

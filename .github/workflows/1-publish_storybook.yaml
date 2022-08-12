@@ -1,0 +1,50 @@
+name: Publish Storybook
+
+on:
+  push:
+    paths:
+      - 'packages/**'
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  publish-storybook:
+    name: Publish Storybook
+    runs-on: ubuntu-latest
+    env:
+      working-directory: ./packages/sdk-react
+      S3_BUCKET: ${{ secrets.S3_BUCKET }}
+      S3_KEY: ${{ secrets.S3_KEY }}
+      INTERNAL_DOCS_URL: ${{ secrets.INTERNAL_DOCS_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.CITYMAPPER_DOCS_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.CITYMAPPER_DOCS_AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+          role-to-assume: ${{ secrets.CITYMAPPER_DOCS_AWS_ROLE_TO_ASSUME }}
+          role-external-id: ${{ secrets.CITYMAPPER_DOCS_AWS_ROLE_EXTERNAL_ID }}
+          role-duration-seconds: 900
+      # Storybook build requires node
+      - name: Setup Node 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      # AWS CLI requires Python
+      - name: Setup Python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+      - name: Install AWS CLI
+        run: pip install awscli
+      - name: Install Node Packages
+        run: yarn install --frozen-lockfile
+      - name: Build and upload docs to citymapper-docs bucket
+        run: ./scripts/publish-storybook.sh
+        working-directory: ${{env.working-directory}}

@@ -18,7 +18,7 @@ import * as React from 'react'
 import { Wrapper, Status } from '@googlemaps/react-wrapper'
 import { createCustomEqual } from 'fast-equals'
 import { isLatLngLiteral } from '@googlemaps/typescript-guards'
-import mapStyles from '../../styles/mapStyles'
+import mapStyles from '../../../styles/mapStyles'
 
 const render = (status: Status) => {
   return <h1>{status}</h1>
@@ -32,7 +32,13 @@ interface MapWrapper extends google.maps.MapOptions {
   children?: React.ReactNode
 }
 
-const MapWrapper: React.VFC = ({ onClick, start, end, loading, children }) => {
+const MapWrapper: React.VFC = ({
+  start,
+  end,
+  loadingRoutes,
+  onClick,
+  children,
+}) => {
   const [zoom, setZoom] = React.useState(13) // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
     lat: 51.483406,
@@ -60,7 +66,7 @@ const MapWrapper: React.VFC = ({ onClick, start, end, loading, children }) => {
           gestureHandling="greedy"
           start={start}
           end={end}
-          loading={loading}
+          loadingRoutes={loadingRoutes}
         >
           {children}
         </Map>
@@ -73,7 +79,7 @@ interface MapProps extends google.maps.MapOptions {
   style: { [key: string]: string }
   onClick?: (e: google.maps.MapMouseEvent) => void
   onIdle?: (map: google.maps.Map) => void
-  loading: boolean
+  loadingRoutes: boolean
   start?: Array<number>
   end?: Array<number>
   children?: React.ReactNode
@@ -84,7 +90,7 @@ const Map: React.FC<MapProps> = ({
   onIdle,
   children,
   style,
-  loading,
+  loadingRoutes,
   start,
   end,
   ...options
@@ -124,7 +130,7 @@ const Map: React.FC<MapProps> = ({
   }, [map, onClick, onIdle])
 
   React.useEffect(() => {
-    if (map && loading) {
+    if (map && loadingRoutes) {
       const bounds = new google.maps.LatLngBounds()
       if (start) {
         bounds.extend(new google.maps.LatLng({ lat: start[0], lng: start[1] }))
@@ -134,7 +140,8 @@ const Map: React.FC<MapProps> = ({
       }
       map.fitBounds(bounds)
     }
-  }, [map, loading])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [map, loadingRoutes])
 
   return (
     <>
@@ -181,6 +188,7 @@ function useDeepCompareEffectForMaps(
   callback: React.EffectCallback,
   dependencies: any[]
 ) {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   React.useEffect(callback, dependencies.map(useDeepCompareMemoize))
 }
 

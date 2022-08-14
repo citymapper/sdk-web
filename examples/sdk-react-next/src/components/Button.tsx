@@ -4,19 +4,22 @@ import CircularProgress from '@mui/material/CircularProgress'
 
 const StyledButton: React.FC<{
   onClick: (e: any) => void
-  loading?: boolean
+  loading: boolean
   label: string
 }> = ({ onClick, label, loading }) => {
   return (
     <Button
       onClick={onClick}
       variant="contained"
-      color="brand"
+      color="primary"
       sx={{
         width: 1,
         mb: 4,
         boxShadow: 'none',
         textTransform: 'none',
+        '&.MuiButtonBase-root:hover': {
+          boxShadow: 'none',
+        },
       }}
     >
       {loading ? (

@@ -1,8 +1,7 @@
 import * as React from 'react'
-import Stack from '@mui/material/Stack'
+import Input from '../Input'
 import ChangeCircleRoundedIcon from '@mui/icons-material/ChangeCircleRounded'
-import { stringToLatLng } from '../utils/latLng'
-import Input from './Input'
+import Stack from '@mui/material/Stack'
 
 const format = (latLng: Array<number>) => {
   const lat = `${latLng[0]}`.length > 6 ? latLng[0].toFixed(6) : latLng[0]
@@ -10,17 +9,14 @@ const format = (latLng: Array<number>) => {
   return `${lat}, ${lng}`
 }
 
-const StartEnd: React.FunctionComponent<{
+const StartEnd: React.FC<{
   start: Array<number>
   end: Array<number>
-  setStart: React.SetStateAction<Array<number>>
-  setEnd: React.SetStateAction<Array<number>>
-}> = ({ start, end, setStart, setEnd }) => {
+}> = ({ start, end }) => {
   const [startValue, setStartValue] = React.useState<string>(format(start))
   const [endValue, setEndValue] = React.useState<string>(format(end))
 
   React.useEffect(() => setStartValue(format(start)), [start])
-
   React.useEffect(() => setEndValue(format(end)), [end])
 
   const onIconClick = () => {
@@ -45,7 +41,7 @@ const StartEnd: React.FunctionComponent<{
       <ChangeCircleRoundedIcon
         onClick={onIconClick}
         fontSize="large"
-        color="brand"
+        height="0"
         sx={{
           position: 'absolute ',
           zIndex: 1,

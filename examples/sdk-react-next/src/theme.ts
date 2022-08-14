@@ -25,10 +25,24 @@ import { red } from '@mui/material/colors'
 
 // Create a theme instance.
 const theme = createTheme({
+  typography: {
+    fontFamily: 'nunito, sans-serif',
+    button: {
+      fontWeight: 700,
+      fontSize: '1rem',
+    },
+    body1: {
+      fontWeight: 700,
+    },
+    h3: {
+      fontWeight: 700,
+    },
+  },
   palette: {
     primary: {
       main: '#ebecf0',
       contrastText: '#000',
+      dark: '#d8dce4',
     },
     secondary: {
       main: '#f5f5f7',

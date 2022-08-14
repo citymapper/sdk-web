@@ -42,6 +42,7 @@ const Polyline = (options) => {
     if (polyline) {
       polyline.setOptions({ ...polyOptions, ...options })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [polyline, options])
 
   return null

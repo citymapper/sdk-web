@@ -1,6 +1,6 @@
 import { RouteList, CMProvider } from '@citymapper/sdk-react'
 
-export const ThemedRouteList = (props: any) => {
+const ThemedRouteList = (props: any) => {
   return (
     <CMProvider
       config={{
@@ -12,3 +12,5 @@ export const ThemedRouteList = (props: any) => {
     </CMProvider>
   )
 }
+
+export default ThemedRouteList

@@ -1,6 +1,6 @@
 import Polyline from '../markers/Polyline'
-import polyline from '@mapbox/polyline'
 import { convertToGooglePolyline } from '../../utils/polyline'
+import polyline from '@mapbox/polyline'
 
 const lineSymbol = {
   path: 'M 0,-1 0,1',

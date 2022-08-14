@@ -1,6 +1,6 @@
 import React from 'react'
 import customRender from '../../jest/customRender'
-import LoadingSkeleton from '../index'
+import LoadingSkeleton from '../LoadingSkeleton'
 
 describe('LoadingSkeleton', () => {
   it('matches snapshot', () => {

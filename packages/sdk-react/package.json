@@ -22,7 +22,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn build:clean && yarn build:esm && yarn build:cjs && yarn build:typings",
+    "barrel": "barrelsby --delete --directory ./src --exclude \"mock|test|jest|utils\" --exportDefault",
+    "build": "yarn barrel && yarn build:clean && yarn build:esm && yarn build:cjs && yarn build:typings",
     "build:clean": "rm -rf dist",
     "build:esm": "tsc --project tsconfig.json --module es6 --outDir dist/esm",
     "build:cjs": "tsc --project tsconfig.json --module commonjs --outDir dist/cjs",
@@ -67,6 +68,7 @@
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.29.0",
     "babel-loader": "^8.2.5",
+    "barrelsby": "^2.3.4",
     "eslint": "^8.18.0",
     "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",

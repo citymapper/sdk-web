@@ -1,7 +1,7 @@
 import { cx } from '@emotion/css'
 import React from 'react'
-import { RouteListProps } from '..'
 import styled from '../../utils/cmStyled'
+import { RouteListProps } from '../RouteList'
 import RouteListItemDetails, {
   RouteListItemDetailsProps,
 } from './RouteListItemDetails'

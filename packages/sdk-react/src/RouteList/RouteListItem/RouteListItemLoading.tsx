@@ -1,5 +1,5 @@
 import React from 'react'
-import LoadingSkeleton from '../../LoadingSkeleton'
+import LoadingSkeleton from '../../LoadingSkeleton/LoadingSkeleton'
 import { Row } from './RouteListItemDetails'
 
 interface RouteListItemLoadingProps {

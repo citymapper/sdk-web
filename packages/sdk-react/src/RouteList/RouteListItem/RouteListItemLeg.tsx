@@ -1,9 +1,9 @@
 import type { Leg } from '@citymapper/api/@types'
 import React from 'react'
-import { RouteListProps } from '..'
 import ServiceIconHike from '../../Icons/Service/ServiceIconHike'
 import ModeIconWalk from '../../Icons/Service/ServiceIconWalk'
 import styled from '../../utils/cmStyled'
+import { RouteListProps } from '../RouteList'
 import RouteListItemLegService, {
   ServiceSeparator,
 } from './RouteListItemLegService'

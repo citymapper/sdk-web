@@ -10,7 +10,7 @@ import React, {
 } from 'react'
 import { useCitymapper } from '../CMProvider'
 import useSafeLayoutEffect from '../utils/useSafeLayoutEffect'
-import RouteListItem from './RouteListItem'
+import RouteListItem from './RouteListItem/RouteListItem'
 import { ServiceSeparator } from './RouteListItem/RouteListItemLegService'
 
 export interface RouteListProps {

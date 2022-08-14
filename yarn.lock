@@ -5513,7 +5513,7 @@ balanced-match@^1.0.0:
 
 barrelsby@^2.3.4:
   version "2.3.4"
-  resolved "https://registry.yarnpkg.com/barrelsby/-/barrelsby-2.3.4.tgz#bd31e06b62ddc510fa0b6e202c1ff0cd9f096867"
+  resolved "https://registry.npmjs.org/barrelsby/-/barrelsby-2.3.4.tgz#bd31e06b62ddc510fa0b6e202c1ff0cd9f096867"
   integrity sha512-p2dFA7nkgjvUkVKf3cvTt4nBWxg5E9gpxUUX857F+0+Mx/P1Iw+WO5/yJSLE2eibIVbj1D+29sE4JczLLoQfKA==
   dependencies:
     "@types/yargs" "^17.0.10"

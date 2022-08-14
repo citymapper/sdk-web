@@ -1,7 +1,7 @@
 import type { Departure, LegTransit, Route, Stop } from '@citymapper/api/@types'
 import React, { useMemo } from 'react'
-import { RouteListProps, useRouteListContext } from '..'
 import styled from '../../utils/cmStyled'
+import { RouteListProps, useRouteListContext } from '../RouteList'
 import RouteListItemDepartures from './RouteListItemDepartures'
 import RouteListItemDuration from './RouteListItemDuration'
 import RouteListItemJourneyTime from './RouteListItemJourneyTime'

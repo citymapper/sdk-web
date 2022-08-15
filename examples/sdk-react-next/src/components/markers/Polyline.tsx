@@ -21,9 +21,9 @@ const Polyline = (options) => {
 
   const polyOptions = {
     geodesic: true,
-    strokeColor: '#FF0000',
+    strokeColor: '#C8342C',
     strokeOpacity: 1.0,
-    strokeWeight: 2,
+    strokeWeight: 4,
   }
 
   React.useEffect(() => {

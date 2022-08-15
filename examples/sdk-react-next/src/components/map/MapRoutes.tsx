@@ -11,9 +11,9 @@ const lineSymbol = {
 const legStyles = {
   walk: {
     geodesic: true,
-    strokeColor: '#000000',
+    strokeColor: '#7DA1BE',
     strokeOpacity: 0.5,
-    strokeWeight: 2,
+    strokeWeight: 4,
     selected: {
       strokeOpacity: 1.0,
     },
@@ -27,9 +27,9 @@ const legStyles = {
   },
   transit: {
     geodesic: true,
-    strokeColor: '#FF0000',
+    strokeColor: '#C8342C',
     strokeOpacity: 1.0,
-    strokeWeight: 2,
+    strokeWeight: 4,
   },
 }
 

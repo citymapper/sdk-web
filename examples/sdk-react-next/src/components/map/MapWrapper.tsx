@@ -19,6 +19,8 @@ import { Wrapper, Status } from '@googlemaps/react-wrapper'
 import { createCustomEqual } from 'fast-equals'
 import { isLatLngLiteral } from '@googlemaps/typescript-guards'
 import mapStyles from '../../../styles/mapStyles'
+import theme from '../../theme'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 const render = (status: Status) => {
   return <h1>{status}</h1>
@@ -97,6 +99,7 @@ const Map: React.FC<MapProps> = ({
 }) => {
   const ref = React.useRef<HTMLDivElement>(null)
   const [map, setMap] = React.useState<google.maps.Map>()
+  const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
 
   React.useEffect(() => {
     if (ref.current && !map) {
@@ -131,6 +134,19 @@ const Map: React.FC<MapProps> = ({
 
   React.useEffect(() => {
     if (map && loadingRoutes) {
+      const padding = isDesktop
+        ? {
+            right: 20,
+            top: 40,
+            left: 20,
+            bottom: 0,
+          }
+        : {
+            right: 20,
+            top: 40,
+            left: 20,
+            bottom: screen.height / 3,
+          }
       const bounds = new google.maps.LatLngBounds()
       if (start) {
         bounds.extend(new google.maps.LatLng({ lat: start[0], lng: start[1] }))
@@ -138,7 +154,7 @@ const Map: React.FC<MapProps> = ({
       if (start) {
         bounds.extend(new google.maps.LatLng({ lat: end[0], lng: end[1] }))
       }
-      map.fitBounds(bounds)
+      map.fitBounds(bounds, padding)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, loadingRoutes])

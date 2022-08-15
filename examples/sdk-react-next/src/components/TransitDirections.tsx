@@ -38,6 +38,7 @@ const TransitDirections: NextPage = () => {
   }, [])
 
   const onButtonClick = async () => {
+    setSelectedRoute(null)
     setLoadingRoutes(true)
     const response = await myApi.directions_transit(start, end)
     setRoutes(response.routes)

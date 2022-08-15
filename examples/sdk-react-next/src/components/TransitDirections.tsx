@@ -11,6 +11,7 @@ import { styled } from '@mui/material/styles'
 import Grid from '@mui/material/Grid'
 import Box from '@mui/system/Box'
 import Heading from './Heading'
+import { isTouchDevice } from '../utils/isTouchDevice'
 
 const drawerBleeding = 134
 
@@ -29,6 +30,12 @@ const TransitDirections: NextPage = () => {
   const [loadingRoutes, setLoadingRoutes] = React.useState(false)
   const [markerIndex, setMarkerIndex] = React.useState(0)
   const [open, setOpen] = React.useState(false)
+  const [swipeable, setSwipeable] = React.useState(false)
+
+  React.useEffect(() => {
+    const result = isTouchDevice() ? true : false
+    setSwipeable(result)
+  }, [])
 
   const onButtonClick = async () => {
     setLoadingRoutes(true)
@@ -115,8 +122,11 @@ const TransitDirections: NextPage = () => {
               keepMounted: true,
             }}
           >
-            <PullerMobile>
-              <Puller onClick={() => toggleDrawer(!open)} />
+            <PullerMobile
+              swipeable={swipeable}
+              onClick={() => toggleDrawer(!open)}
+            >
+              <Puller />
               <Heading />
             </PullerMobile>
             <SideBarMobile>{sideBar}</SideBarMobile>
@@ -161,7 +171,7 @@ const MapMobile = styled(Box)(() => ({
   height: 'calc(100vh - 120px)',
 }))
 
-const PullerMobile = styled(Box)(() => ({
+const PullerMobile = styled(Box)(({ swipeable }) => ({
   alignItems: 'center',
   backgroundColor: '#fff',
   borderTopLeftRadius: 16,
@@ -176,6 +186,7 @@ const PullerMobile = styled(Box)(() => ({
   paddingTop: 16,
   paddingLeft: 20,
   paddingRight: 20,
+  pointerEvents: !swipeable && 'all',
   position: 'absolute',
   right: 0,
   top: -drawerBleeding,
@@ -187,6 +198,5 @@ const Puller = styled(Box)(({ theme }) => ({
   borderRadius: 4,
   height: 8,
   width: 32,
-  pointerEvents: 'all',
   marginBottom: 8,
 }))

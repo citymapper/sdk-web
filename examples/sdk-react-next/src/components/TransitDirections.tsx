@@ -37,6 +37,17 @@ const TransitDirections: NextPage = () => {
     setSwipeable(result)
   }, [])
 
+  const handleInputChange = (
+    val: React.SetStateAction<number[]>,
+    markerIndex: number
+  ) => {
+    if (markerIndex === 0) {
+      setStart(val)
+    } else {
+      setEnd(val)
+    }
+  }
+
   const onButtonClick = async () => {
     setSelectedRoute(null)
     setLoadingRoutes(true)
@@ -74,6 +85,7 @@ const TransitDirections: NextPage = () => {
       routes={routes}
       selectedRoute={selectedRoute || hoveredRoute}
       loadingRoutes={loadingRoutes}
+      handleInputChange={handleInputChange}
       onButtonClick={onButtonClick}
       onRouteClick={onRouteClick}
       onRouteHover={setHoveredRoute}

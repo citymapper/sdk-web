@@ -14,6 +14,10 @@ const SideBar: React.FC<{
   routes: Array<Route>
   selectedRoute: Route
   loadingRoutes: boolean
+  handleInputChange: (
+    val: React.SetStateAction<number[]>,
+    markerIndex: number
+  ) => void
   onButtonClick: (e: React.MouseEvent<HTMLElement>) => void
   onRouteClick: (route: Route) => void
   onRouteHover: (route: Route) => void
@@ -23,6 +27,7 @@ const SideBar: React.FC<{
   routes,
   selectedRoute,
   loadingRoutes,
+  handleInputChange,
   onButtonClick,
   onRouteClick,
   onRouteHover,
@@ -31,7 +36,7 @@ const SideBar: React.FC<{
   return (
     <StyledBox>
       {isDesktop && <Heading />}
-      <StartEnd start={start} end={end} />
+      <StartEnd start={start} end={end} handleInputChange={handleInputChange} />
       <Button onClick={onButtonClick} label="Search" loading={loadingRoutes} />
       {routes?.length > 0 && (
         <RouteList

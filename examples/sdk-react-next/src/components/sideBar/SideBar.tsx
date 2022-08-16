@@ -69,6 +69,7 @@ const SideBar: React.FC<{
 export default SideBar
 
 const StyledBox = styled(Box)(({ theme }) => ({
+  minHeight: '100vh',
   [theme.breakpoints.down('sm')]: {
     padding: 20,
     paddingTop: 0,

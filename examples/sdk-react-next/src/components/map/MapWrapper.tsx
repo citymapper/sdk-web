@@ -21,6 +21,7 @@ import { isLatLngLiteral } from '@googlemaps/typescript-guards'
 import mapStyles from '../../../styles/mapStyles'
 import theme from '../../theme'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import { initialMapCenter } from '../../utils/initialCoordinates'
 
 const render = (status: Status) => {
   return <h1>{status}</h1>
@@ -43,8 +44,8 @@ const MapWrapper: React.VFC = ({
 }) => {
   const [zoom, setZoom] = React.useState(13) // initial zoom
   const [center, setCenter] = React.useState<google.maps.LatLngLiteral>({
-    lat: 51.483406,
-    lng: -0.1290635,
+    lat: initialMapCenter[0],
+    lng: initialMapCenter[1],
   })
 
   const onIdle = (m: google.maps.Map) => {

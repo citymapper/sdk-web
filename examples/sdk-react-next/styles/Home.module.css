@@ -19,6 +19,7 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  color: #000;
 }
 
 .footer a {
@@ -26,11 +27,11 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  text-decoration: none;
 }
 
 .title a {
-  color: #37AB2F;
-  ;
+  color: #37ab2f;
   text-decoration: none;
 }
 
@@ -89,8 +90,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #37AB2F;
-  border-color: #37AB2F;
+  color: #37ab2f;
+  border-color: #37ab2f;
 }
 
 .card h2 {
@@ -109,7 +110,7 @@
   margin-left: 0.5rem;
 }
 
-.poweredByLink{
+.poweredByLink {
   display: flex;
   align-items: center;
 }

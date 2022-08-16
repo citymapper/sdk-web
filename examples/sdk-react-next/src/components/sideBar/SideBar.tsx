@@ -7,6 +7,7 @@ import { styled } from '@mui/material/styles'
 import { Route } from '@citymapper/api/@types'
 import theme from '../../theme'
 import Heading from '../Heading'
+import Footer from '../Footer'
 
 const SideBar: React.FC<{
   start: Array<number>
@@ -34,23 +35,34 @@ const SideBar: React.FC<{
 }) => {
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
   return (
-    <StyledBox>
-      {isDesktop && <Heading />}
-      <StartEnd start={start} end={end} handleInputChange={handleInputChange} />
-      <Button onClick={onButtonClick} label="Search" loading={loadingRoutes} />
-      {routes?.length > 0 && (
-        <RouteList
-          routes={routes}
-          selectedRoute={selectedRoute}
-          onClick={(e: React.MouseEvent<HTMLElement>, route: Route) =>
-            onRouteClick(route)
-          }
-          onMouseEnter={(e: React.MouseEvent<HTMLElement>, route: Route) =>
-            onRouteHover(route)
-          }
+    <>
+      <StyledBox>
+        {isDesktop && <Heading />}
+        <StartEnd
+          start={start}
+          end={end}
+          handleInputChange={handleInputChange}
         />
-      )}
-    </StyledBox>
+        <Button
+          onClick={onButtonClick}
+          label="Search"
+          loading={loadingRoutes}
+        />
+        {routes?.length > 0 && (
+          <RouteList
+            routes={routes}
+            selectedRoute={selectedRoute}
+            onClick={(e: React.MouseEvent<HTMLElement>, route: Route) =>
+              onRouteClick(route)
+            }
+            onMouseEnter={(e: React.MouseEvent<HTMLElement>, route: Route) =>
+              onRouteHover(route)
+            }
+          />
+        )}
+      </StyledBox>
+      <Footer />
+    </>
   )
 }
 

@@ -33,24 +33,6 @@ export default function Index() {
   return (
     <Container maxWidth={false} disableGutters>
       <TransitDirections />
-      <footer className={styles.footer}>
-        <a
-          href="https://citymapper.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.poweredByLink}
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image
-              src="/favicon.png"
-              alt="Citymapper Logo"
-              width={24}
-              height={24}
-            />
-          </span>
-        </a>
-      </footer>
     </Container>
   )
 }

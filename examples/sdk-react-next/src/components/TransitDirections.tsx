@@ -12,7 +12,7 @@ import Grid from '@mui/material/Grid'
 import Box from '@mui/system/Box'
 import Heading from './Heading'
 import { isTouchDevice } from '../utils/isTouchDevice'
-
+import { initialStart, initialEnd } from '../utils/initialCoordinates'
 const drawerBleeding = 134
 
 const myApi = new CitymapperApi({
@@ -22,20 +22,33 @@ const myApi = new CitymapperApi({
 
 const TransitDirections: NextPage = () => {
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
-  const [end, setEnd] = React.useState([51.5, -0.05])
-  const [start, setStart] = React.useState([51.5, -0.1])
+  const [end, setEnd] = React.useState(initialStart)
+  const [start, setStart] = React.useState(initialEnd)
   const [routes, setRoutes] = React.useState([] as Route[])
   const [selectedRoute, setSelectedRoute] = React.useState(null as Route | null)
   const [hoveredRoute, setHoveredRoute] = React.useState(null as Route | null)
   const [loadingRoutes, setLoadingRoutes] = React.useState(false)
-  const [markerIndex, setMarkerIndex] = React.useState(0)
+  const [markerIndex, setMarkerIndex] = React.useState(1)
   const [open, setOpen] = React.useState(false)
   const [swipeable, setSwipeable] = React.useState(false)
+  const [search, setSearch] = React.useState(false)
 
   React.useEffect(() => {
     const result = isTouchDevice() ? true : false
     setSwipeable(result)
   }, [])
+
+  React.useEffect(() => {
+    const fetchData = async () => {
+      setSelectedRoute(null)
+      setLoadingRoutes(true)
+      setOpen(true)
+      const response = await myApi.directions_transit(start, end)
+      setRoutes(response.routes)
+      setLoadingRoutes(false)
+    }
+    fetchData()
+  }, [end, search])
 
   const handleInputChange = (
     val: React.SetStateAction<number[]>,
@@ -48,13 +61,7 @@ const TransitDirections: NextPage = () => {
     }
   }
 
-  const onButtonClick = async () => {
-    setSelectedRoute(null)
-    setLoadingRoutes(true)
-    const response = await myApi.directions_transit(start, end)
-    setRoutes(response.routes)
-    setLoadingRoutes(false)
-  }
+  const onButtonClick = async () => setSearch(!search)
 
   const onMapClick = (e: google.maps.MapMouseEvent) => {
     const newMarkerIndex = (markerIndex + 1) % 2
@@ -118,7 +125,7 @@ const TransitDirections: NextPage = () => {
           <Global
             styles={{
               '.MuiDrawer-root > .MuiPaper-root': {
-                height: `calc(60% - ${drawerBleeding}px)`,
+                height: `calc(50% - ${drawerBleeding}px)`,
                 overflow: 'visible',
               },
             }}
@@ -127,6 +134,7 @@ const TransitDirections: NextPage = () => {
           <SwipeableDrawer
             anchor="bottom"
             open={open}
+            onClick={() => toggleDrawer(!open)}
             onClose={() => toggleDrawer(false)}
             onOpen={() => toggleDrawer(true)}
             swipeAreaWidth={drawerBleeding}
@@ -135,10 +143,7 @@ const TransitDirections: NextPage = () => {
               keepMounted: true,
             }}
           >
-            <PullerMobile
-              swipeable={swipeable}
-              onClick={() => toggleDrawer(!open)}
-            >
+            <PullerMobile>
               <Puller />
               <Heading />
             </PullerMobile>
@@ -184,7 +189,7 @@ const MapMobile = styled(Box)(() => ({
   height: 'calc(100vh - 120px)',
 }))
 
-const PullerMobile = styled(Box)(({ swipeable }) => ({
+const PullerMobile = styled(Box)(() => ({
   alignItems: 'center',
   backgroundColor: '#fff',
   borderTopLeftRadius: 16,
@@ -199,7 +204,7 @@ const PullerMobile = styled(Box)(({ swipeable }) => ({
   paddingTop: 16,
   paddingLeft: 20,
   paddingRight: 20,
-  pointerEvents: !swipeable && 'all',
+  pointerEvents: 'all',
   position: 'absolute',
   right: 0,
   top: -drawerBleeding,

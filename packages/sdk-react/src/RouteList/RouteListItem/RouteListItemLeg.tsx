@@ -60,7 +60,7 @@ export const ServiceMode = styled('div', {
   svg,
   img {
     height: 100%;
-    width: 100%;
+    width: auto;
   }
 
   &.cm-route-summary-mode {

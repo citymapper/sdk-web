@@ -134,7 +134,6 @@ const TransitDirections: NextPage = () => {
           <SwipeableDrawer
             anchor="bottom"
             open={open}
-            onClick={() => toggleDrawer(!open)}
             onClose={() => toggleDrawer(false)}
             onOpen={() => toggleDrawer(true)}
             swipeAreaWidth={drawerBleeding}
@@ -144,7 +143,7 @@ const TransitDirections: NextPage = () => {
             }}
           >
             <PullerMobile>
-              <Puller />
+              <Puller onClick={() => toggleDrawer(!open)}/>
               <Heading />
             </PullerMobile>
             <SideBarMobile>{sideBar}</SideBarMobile>
@@ -204,7 +203,6 @@ const PullerMobile = styled(Box)(() => ({
   paddingTop: 16,
   paddingLeft: 20,
   paddingRight: 20,
-  pointerEvents: 'all',
   position: 'absolute',
   right: 0,
   top: -drawerBleeding,
@@ -217,4 +215,5 @@ const Puller = styled(Box)(({ theme }) => ({
   height: 8,
   width: 32,
   marginBottom: 8,
+  pointerEvents: 'all',
 }))

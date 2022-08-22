@@ -97,7 +97,7 @@ exports[`RouteListItemLegService multiple branded service should display disrupt
 .emotion-4 svg,
 .emotion-4 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-4.cm-route-summary-mode {
@@ -232,7 +232,7 @@ exports[`RouteListItemLegService multiple branded service should display in a bo
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -393,7 +393,7 @@ exports[`RouteListItemLegService multiple branded service should display in a bo
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -564,7 +564,7 @@ exports[`RouteListItemLegService multiple branded service should display in a bo
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -688,7 +688,7 @@ exports[`RouteListItemLegService multiple non-branded service should display as 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -811,7 +811,7 @@ exports[`RouteListItemLegService multiple non-branded service should display as 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -994,7 +994,7 @@ exports[`RouteListItemLegService multiple non-branded service should display as 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1101,7 +1101,7 @@ exports[`RouteListItemLegService multiple non-branded service should display in 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1218,7 +1218,7 @@ exports[`RouteListItemLegService multiple non-branded service should display in 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1349,7 +1349,7 @@ exports[`RouteListItemLegService should display as a badge with correct mode ico
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1473,7 +1473,7 @@ exports[`RouteListItemLegService should display as a box with correct mode icon 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1597,7 +1597,7 @@ exports[`RouteListItemLegService single branded service should display as a badg
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1721,7 +1721,7 @@ exports[`RouteListItemLegService single branded service should display as icon b
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {
@@ -1848,7 +1848,7 @@ exports[`RouteListItemLegService single branded service should display disruptio
 .emotion-4 svg,
 .emotion-4 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-4.cm-route-summary-mode {
@@ -2032,7 +2032,7 @@ exports[`RouteListItemLegService single branded service should display disruptio
 .emotion-4 svg,
 .emotion-4 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-4.cm-route-summary-mode {
@@ -2153,7 +2153,7 @@ exports[`RouteListItemLegService single branded service should display in a box 
 .emotion-2 svg,
 .emotion-2 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-2.cm-route-summary-mode {

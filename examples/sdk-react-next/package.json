@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@citymapper/api": "latest",
-    "@citymapper/sdk-react": "latest",
+    "@citymapper/sdk-react": "canary",
     "@emotion/cache": "^11.9.3",
     "@emotion/react": "^11.9.3",
     "@emotion/server": "^11.4.0",

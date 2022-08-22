@@ -1349,10 +1349,10 @@
   resolved "https://registry.yarnpkg.com/@citymapper/api/-/api-0.0.1-alpha.44.tgz#e468ba835ac81a48854a58d45830d4ecdf2744d5"
   integrity sha512-T9aFfePPrLW4XT9IqA1+1rv4Obzd9FfVy6YprfKElG0Sv6LDt3139Sl6jyDii/EXFbuwJNQWeI4Ld5aHtxgRWg==
 
-"@citymapper/sdk-react@latest":
-  version "0.0.1-alpha.44"
-  resolved "https://registry.yarnpkg.com/@citymapper/sdk-react/-/sdk-react-0.0.1-alpha.44.tgz#50503c47834a9e6b3d11c2540b53ebfba8b513b6"
-  integrity sha512-wFGl1QkIxx6CMLWZe8vkMoR/u5Xq3uFFZjjQFNEzSKT7Ncx7ueCDaAvslyMexGjpAHKZNSTjRb5oDST5YW2QMA==
+"@citymapper/sdk-react@canary":
+  version "0.0.1-alpha.24"
+  resolved "https://registry.yarnpkg.com/@citymapper/sdk-react/-/sdk-react-0.0.1-alpha.24.tgz#1153a255f9de89710a6637719db8b31e78ffcc22"
+  integrity sha512-JRFb8yc51ze3FX1Zmxy3+Ak2MUjky5WjvCuzuvzB9K7wd9ZIRwytLeJ8IssoVUYbmtyIhs63bJdnpFEGhGERSQ==
   dependencies:
     "@emotion/css" "^11.9.0"
     "@emotion/is-prop-valid" "^1.1.3"

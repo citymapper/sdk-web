@@ -67,7 +67,7 @@ exports[`RouteListItemDetails should not show second row when no transit legs ex
 .emotion-4 svg,
 .emotion-4 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-4.cm-route-summary-mode {
@@ -307,7 +307,7 @@ exports[`RouteListItemDetails should render route without journey times 1`] = `
 .emotion-5 svg,
 .emotion-5 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-5.cm-route-summary-mode {
@@ -681,7 +681,7 @@ exports[`RouteListItemDetails should render route without price 1`] = `
 .emotion-5 svg,
 .emotion-5 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-5.cm-route-summary-mode {
@@ -1090,7 +1090,7 @@ exports[`RouteListItemDetails should render standard route 1`] = `
 .emotion-5 svg,
 .emotion-5 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-5.cm-route-summary-mode {

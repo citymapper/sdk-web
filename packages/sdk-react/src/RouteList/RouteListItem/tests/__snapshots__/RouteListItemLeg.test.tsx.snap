@@ -27,7 +27,7 @@ exports[`RouteListItemLeg should display standard walk leg correctly 1`] = `
 .emotion-1 svg,
 .emotion-1 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-1.cm-route-summary-mode {
@@ -114,7 +114,7 @@ exports[`RouteListItemLeg should display walk leg without transfer time 1`] = `
 .emotion-1 svg,
 .emotion-1 img {
   height: 100%;
-  width: 100%;
+  width: auto;
 }
 
 .emotion-1.cm-route-summary-mode {

@@ -13,6 +13,8 @@ import Box from '@mui/system/Box'
 import Heading from './Heading'
 import { isTouchDevice } from '../utils/isTouchDevice'
 import { initialStart, initialEnd } from '../utils/initialCoordinates'
+import { useRouter } from 'next/router'
+
 const drawerBleeding = 134
 
 const myApi = new CitymapperApi({
@@ -21,9 +23,10 @@ const myApi = new CitymapperApi({
 })
 
 const TransitDirections: NextPage = () => {
+  const router = useRouter()
   const isDesktop = useMediaQuery(theme.breakpoints.up('sm'))
-  const [end, setEnd] = React.useState(initialStart)
-  const [start, setStart] = React.useState(initialEnd)
+  const [end, setEnd] = React.useState(initialEnd)
+  const [start, setStart] = React.useState(initialStart)
   const [routes, setRoutes] = React.useState([] as Route[])
   const [selectedRoute, setSelectedRoute] = React.useState(null as Route | null)
   const [hoveredRoute, setHoveredRoute] = React.useState(null as Route | null)
@@ -49,6 +52,14 @@ const TransitDirections: NextPage = () => {
     }
     fetchData()
   }, [end, search])
+
+  React.useEffect(() => {
+    const { endcoord } = router.query
+    if (endcoord) {
+      const [lat, lng] = (endcoord as string).split(',')
+      setEnd([parseFloat(lat), parseFloat(lng)])
+    }
+  }, [router.query])
 
   const handleInputChange = (
     val: React.SetStateAction<number[]>,

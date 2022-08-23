@@ -1,4 +1,4 @@
-const initialStart = [51.473379, -0.199225]
+const initialStart = [51.5218926, -0.0834238]
 const initialEnd = [51.495949, -0.176351]
 
 const initialMapCenter = [

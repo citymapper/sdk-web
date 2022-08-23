@@ -11,8 +11,8 @@ const Map: React.FC<{
   routes: Array<Route>
   selectedRoute: Route
   loadingRoutes: boolean
-  onMapClick: (e: google.maps.MapMouseEvent) => void
-  onMarkerDrag: (e: google.maps.MapMouseEvent, markerIndex: number) => void
+  onMapClick: (coords: Array<number>) => void
+  onMarkerDrag: (coords: Array<number>, markerIndex: number) => void
 }> = ({
   start,
   end,
@@ -33,13 +33,13 @@ const Map: React.FC<{
         key={0}
         position={{ lat: start[0], lng: start[1] }}
         draggable={true}
-        onDrag={(e: google.maps.MapMouseEvent) => onMarkerDrag(e, 0)}
+        onDrag={(coords: Array<number>) => onMarkerDrag(coords, 0)}
       />
       <EndMarker
         key={1}
         position={{ lat: end[0], lng: end[1] }}
         draggable={true}
-        onDrag={(e: google.maps.MapMouseEvent) => onMarkerDrag(e, 1)}
+        onDrag={(coords: Array<number>) => onMarkerDrag(coords, 1)}
       />
       {routes?.length && (
         <MapRoutes routes={routes} selectedRoute={selectedRoute} />

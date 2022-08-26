@@ -43,11 +43,11 @@ const TransitDirections: NextPage = () => {
 
   const onRouteClick = (route: Route) => setSelectedRoute(route)
 
-  const onMarkerDrag = (e: google.maps.MapMouseEvent, markerIndex: number) => {
+  const onMarkerDrag = (coords: Array<number>, markerIndex: number) => {
     if (markerIndex === 0) {
-      setStart(e.target.value)
+      setStart(coords)
     } else {
-      setEnd(e.target.value)
+      setEnd(coords)
     }
   }
 

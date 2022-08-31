@@ -1,14 +1,12 @@
 import * as React from 'react'
-import Input from '../Input'
 import ChangeCircleRoundedIcon from '@mui/icons-material/ChangeCircleRounded'
 import Stack from '@mui/material/Stack'
-import isValidCoords from 'is-valid-coords'
+import PlacesAutocomplete from '../PlacesAutoComplete'
+import Combobox from '../Combobox'
+import Geocode from 'react-geocode'
 
-const format = (latLng: Array<number>) => {
-  const lat = `${latLng[0]}`.length > 6 ? latLng[0].toFixed(6) : latLng[0]
-  const lng = `${latLng[1]}`.length > 6 ? latLng[1].toFixed(6) : latLng[1]
-  return `${lat}, ${lng}`
-}
+Geocode.setApiKey(process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY);
+Geocode.setLanguage("en");
 
 const StartEnd: React.FC<{
   start: Array<number>
@@ -18,24 +16,55 @@ const StartEnd: React.FC<{
     markerIndex: number
   ) => void
 }> = ({ start, end, handleInputChange }) => {
-  const [startValue, setStartValue] = React.useState<string>(format(start))
-  const [endValue, setEndValue] = React.useState<string>(format(end))
-
-  React.useEffect(() => setStartValue(format(start)), [start])
-  React.useEffect(() => setEndValue(format(end)), [end])
+  const [startValue, setStartValue] = React.useState(null)
+  const [endValue, setEndValue] = React.useState(null)
 
   React.useEffect(() => {
-    const [lat, lng] = startValue.split(',')
-    if (isValidCoords(lat, lng)) {
-      handleInputChange([parseFloat(lat), parseFloat(lng)], 0)
-    }
+    Geocode.fromLatLng(`${start[0]}`, `${start[1]}`).then(
+      (response) => {
+        const address = response.results[0].formatted_address;
+        setStartValue(address)
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }, [start])
+
+  React.useEffect(() => {
+    Geocode.fromLatLng(`${end[0]}`, `${end[1]}`).then(
+      (response) => {
+        const address = response.results[0].formatted_address;
+        setEndValue(address)
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  }, [end])
+
+  React.useEffect(() => {
+    Geocode.fromAddress(startValue).then(
+      (response) => {
+        const { lat, lng } = response.results[0].geometry.location;
+        handleInputChange([lat, lng], 0)
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }, [startValue])
 
   React.useEffect(() => {
-    const [lat, lng] = endValue.split(',')
-    if (isValidCoords(lat, lng)) {
-      handleInputChange([parseFloat(lat), parseFloat(lng)], 1)
-    }
+    Geocode.fromAddress(endValue).then(
+      (response) => {
+        const { lat, lng } = response.results[0].geometry.location;
+        handleInputChange([lat, lng], 1)
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   }, [endValue])
 
   const onIconClick = () => {
@@ -47,16 +76,28 @@ const StartEnd: React.FC<{
 
   return (
     <Stack sx={{ width: 1, position: 'relative' }}>
-      <Input
-        label="Start"
-        value={startValue}
-        onChange={(e) => setStartValue(e.target.value)}
-      />
-      <Input
-        label="End"
-        value={endValue}
-        onChange={(e) => setEndValue(e.target.value)}
-      />
+      <PlacesAutocomplete 
+      markerValue={startValue}
+      render={({ handleInputChange, value, options, ready }) => (
+        <Combobox 
+        label='Start'
+        disabled={!ready}
+        options={options}
+        value={value}
+        handleChange={(value) => setStartValue(value)}
+        handleInputChange={handleInputChange}/>
+      )}/>
+      <PlacesAutocomplete 
+      markerValue={endValue}
+      render={({ handleInputChange, value, options, ready }) => (
+        <Combobox 
+        label='End' 
+        disabled={!ready}
+        options={options}
+        value={value}
+        handleChange={(value) => setEndValue(value)}
+        handleInputChange={handleInputChange}/>
+      )}/>
       <ChangeCircleRoundedIcon
         onClick={onIconClick}
         fontSize="large"

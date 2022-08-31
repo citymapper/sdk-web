@@ -15,7 +15,6 @@
  */
 
 import * as React from 'react'
-import { Wrapper, Status } from '@googlemaps/react-wrapper'
 import { createCustomEqual } from 'fast-equals'
 import { isLatLngLiteral } from '@googlemaps/typescript-guards'
 import mapStyles from '../../../styles/mapStyles'
@@ -23,9 +22,6 @@ import theme from '../../theme'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { initialMapCenter } from '../../utils/initialCoordinates'
 
-const render = (status: Status) => {
-  return <h1>{status}</h1>
-}
 
 interface MapWrapper extends google.maps.MapOptions {
   onClick?: (e: google.maps.MapMouseEvent) => void
@@ -55,10 +51,6 @@ const MapWrapper: React.VFC = ({
 
   return (
     <div style={{ display: 'flex', height: '100%' }}>
-      <Wrapper
-        apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
-        render={render}
-      >
         <Map
           center={center}
           onClick={onClick}
@@ -73,7 +65,6 @@ const MapWrapper: React.VFC = ({
         >
           {children}
         </Map>
-      </Wrapper>
     </div>
   )
 }

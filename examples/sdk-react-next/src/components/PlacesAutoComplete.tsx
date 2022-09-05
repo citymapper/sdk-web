@@ -18,7 +18,7 @@ const PlacesAutocomplete = ({ render, markerValue }) => {
     clearSuggestions,
   } = usePlacesAutocomplete({
     requestOptions: {
-      componentRestrictions: { country: "gb" },
+      componentRestrictions: { country: "uk" },
     },
   });
 

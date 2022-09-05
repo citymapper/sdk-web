@@ -23,21 +23,21 @@ const PlacesAutocomplete = ({ render, markerValue }) => {
   });
 
   const handleInputChange = (value) => {
-    if (isCoordinates(value)) {
-      const [lat, lng] = value.split(',')
-      Geocode.fromLatLng(`${lat}`, `${lng}`).then(
-        (response) => {
-          console.log(response)
-          const address = response.results[0].formatted_address;
-          setValue(address)
-        },
-        (error) => {
-          console.error(error);
-        }
-      );
-    } else {
+    // if (isCoordinates(value)) {
+    //   const [lat, lng] = value.split(',')
+    //   Geocode.fromLatLng(`${lat}`, `${lng}`).then(
+    //     (response) => {
+    //       console.log(response)
+    //       const address = response.results[0].formatted_address;
+    //       setValue(address)
+    //     },
+    //     (error) => {
+    //       console.error(error);
+    //     }
+    //   );
+    // } else {
       setValue(value)
-    }
+    // }
   };
 
   React.useEffect(() => {

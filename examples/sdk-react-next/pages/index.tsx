@@ -9,6 +9,7 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
+import { Wrapper } from '@googlemaps/react-wrapper'
 
 const Home: NextPage = () => {
   return (
@@ -30,9 +31,16 @@ const Home: NextPage = () => {
 }
 
 export default function Index() {
+  
+  const render = (status: Status) => {
+    return <h1>{status}</h1>
+  }
+  
   return (
     <Container maxWidth={false} disableGutters>
-      <TransitDirections />
+      <Wrapper apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY} render={render} libraries={["places"]}>
+        <TransitDirections/>
+      </Wrapper>
     </Container>
   )
 }

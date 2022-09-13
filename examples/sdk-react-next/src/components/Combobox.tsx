@@ -1,8 +1,8 @@
-import * as React from 'react';
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
-import theme from '../theme';
-import InputAdornment from '@mui/material/InputAdornment';
+import * as React from 'react'
+import TextField from '@mui/material/TextField'
+import Autocomplete from '@mui/material/Autocomplete'
+import theme from '../theme'
+import InputAdornment from '@mui/material/InputAdornment'
 
 const Combobox: React.FC<{
   options: Array<object>
@@ -15,12 +15,16 @@ const Combobox: React.FC<{
   return (
     <Autocomplete
       value={value}
-      onChange={(event: any, selectedOption: any) => handleChange(selectedOption?.value || '')}
-      onInputChange={(event: any, currentValue: string | null) => handleInputChange(currentValue)}
+      onChange={(event: any, selectedOption: any) =>
+        handleChange(selectedOption?.value || '')
+      }
+      onInputChange={(event: any, currentValue: string | null) =>
+        handleInputChange(currentValue)
+      }
       freeSolo
       options={options}
-      sx={{ 
-        width: '100%', 
+      sx={{
+        width: '100%',
         mb: 1,
       }}
       renderInput={(params) => (
@@ -37,7 +41,7 @@ const Combobox: React.FC<{
           disabled={disabled}
           InputProps={{
             ...params.InputProps,
-            disableUnderline: true,
+            // disableUnderline: true,
             startAdornment: (
               <>
                 <InputAdornment position="start" sx={{ width: '40px', pl: 1 }}>
@@ -48,15 +52,17 @@ const Combobox: React.FC<{
             ),
             endAdornment: (
               <>
-                <InputAdornment position="end" sx={{ width: '40px', pl: 1 }}>
-                </InputAdornment>
+                <InputAdornment
+                  position="end"
+                  sx={{ width: '40px', pl: 1 }}
+                ></InputAdornment>
               </>
-            )
+            ),
           }}
-          />
+        />
       )}
     />
-  );
+  )
 }
 
 export default Combobox

@@ -4,7 +4,7 @@ import { Box, styled, Typography, Link } from '@mui/material'
 const Heading: React.FC = () => {
   return (
     <StyledBox>
-      <Typography variant="body1" component="body1" gutterBottom>
+      <Typography variant="body1" gutterBottom>
         <Link
           color="inherit"
           href="https://citymapper.com"
@@ -14,7 +14,7 @@ const Heading: React.FC = () => {
         </Link>{' '}
         for React
       </Typography>
-      <Typography variant="h3" component="h3" gutterBottom>
+      <Typography variant="h3" gutterBottom>
         RouteList
       </Typography>
     </StyledBox>

@@ -1,4 +1,5 @@
 import Polyline from '../markers/Polyline'
+import StationMarker from '../markers/StationMarker'
 import { convertToGooglePolyline } from '../../utils/polyline'
 import polyline from '@mapbox/polyline'
 
@@ -40,22 +41,55 @@ const defaultLegStyle = {
   strokeWeight: 2,
 }
 
-const MapRoute: NextPage = ({ route, isSelected, map }) => {
-  const paths = route.legs.map((leg) => leg.path)
-  const styles = route.legs.map(
-    (leg) => legStyles[leg.travel_mode] || defaultLegStyle
+const MapLine: NextPage = ({ path, map, style }) => {
+  return <Polyline path={path} map={map} {...style} />
+}
+
+const MapStop: NextPage = ({ position, map, style }) => {
+  const googlePosition = {
+    lat: position.lat,
+    lng: position.lon ? position.lon : position.lng,
+  }
+  return <StationMarker position={googlePosition} map={map} {...style} />
+  // return <Circle position={googlePosition} map={map} {...style} />
+}
+
+const MapLeg: NextPage = ({ leg, map, isSelected }) => {
+  const { path, stops } = leg
+  const legStyle = { ...(legStyles[leg.travel_mode] || defaultLegStyle) }
+  if (leg.services?.length) {
+    legStyle.strokeColor = leg.services[0].color
+  }
+  legStyle.strokeOpacity = isSelected ? 1.0 : 0.1
+  return (
+    <>
+      <MapLine path={path} map={map} style={legStyle} />
+
+      {stops &&
+        isSelected &&
+        stops.map((s, i) => {
+          if (!s) return null
+          return (
+            <MapStop
+              key={i}
+              position={s.coordinates}
+              map={map}
+              style={legStyle}
+            />
+          )
+        })}
+    </>
   )
-  return paths.map((p, i) => {
-    return (
-      <Polyline
-        key={i}
-        path={p}
-        map={map}
-        {...styles[i]}
-        strokeOpacity={isSelected ? 1.0 : 0.1}
-      />
-    )
-  })
+}
+
+const MapRoute: NextPage = ({ route, isSelected, map }) => {
+  return (
+    <>
+      {route.legs.map((leg, i) => {
+        return <MapLeg leg={leg} isSelected={isSelected} key={i} map={map} />
+      })}
+    </>
+  )
 }
 
 const MapRoutes: NextPage = ({ routes, selectedRoute, map }) => {
